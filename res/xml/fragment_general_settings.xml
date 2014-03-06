@@ -32,6 +32,7 @@
         <intent android:action="android.intent.action.MAIN"
             android:targetPackage="com.cyanogenmod.lockclock"
             android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
+<<<<<<< HEAD
         </PreferenceScreen>
     </PreferenceCategory>
 
@@ -75,3 +76,19 @@
     </PreferenceCategory>
 
 </PreferenceScreen>
+=======
+    </PreferenceScreen>
+
+    <com.aokp.romcontrol.fragments.general.HostnamePreference
+            android:key="device_hostname"
+            android:title="@string/device_hostname"
+            android:dialogTitle="@string/device_hostname"
+            android:positiveButtonText="@string/save"
+            android:negativeButtonText="@string/cancel"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:persistent="false" />
+
+</PreferenceScreen>
+>>>>>>> 6f22245... ROMControl - XuiMod: Toast Animations [2/2]
