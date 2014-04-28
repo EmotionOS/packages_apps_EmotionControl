@@ -50,6 +50,7 @@ import com.emotion.emotioncontrol.fragments.statusbar.TrafficSettingsFragment;
 import com.emotion.emotioncontrol.fragments.general.RecentsSettingsFragment;
 import com.emotion.emotioncontrol.fragments.applauncher.AppLauncherTabHostFragment;
 import com.emotion.emotioncontrol.fragments.applauncher.AppCircleBarSettings;
+import com.emotion.emotioncontrol.fragments.applauncher.AppSideBarSettings;
 import com.emotion.emotioncontrol.fragments.applauncher.GestureAnywhereSettings;
 
 import com.emotion.emotioncontrol.fragments.ui.UITabHostFragment;

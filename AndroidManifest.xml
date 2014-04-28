@@ -60,8 +60,6 @@
             </intent-filter>
         </activity>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         <activity android:name="com.emotion.emotioncontrol.fragments.NavigationDrawerFragment" />
         <activity android:name="com.emotion.emotioncontrol.fragments.NotificationsDrawerFragment" />
         <activity android:name="com.emotion.emotioncontrol.fragments.general.GeneralTabHostFragment" />
@@ -81,7 +79,8 @@
 	<activity android:name="com.emotion.emotioncontrol.fragments.PowerMenuSettingsFragment" />
 	<activity android:name="com.emotion.emotioncontrol.fragments.general.RecentsSettingsFragment" />
 	<activity android:name="com.emotion.emotioncontrol.fragments.applauncher.AppLauncherTabHostFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.AppCircleBarSettings" />	
+        <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.AppCircleBarSettings" />
+        <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.AppSideBarSettings" />	
         <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.GestureAnywhereSettings" />
         <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.GestureAnywhereBuilderActivity" />
         <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.GestureAnywhereCreateGestureActivity" />
