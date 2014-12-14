@@ -48,6 +48,8 @@ import com.emotion.emotioncontrol.fragments.statusbar.StatusBarTabHostFragment;
 import com.emotion.emotioncontrol.fragments.statusbar.StatusbarSettingsFragment;
 import com.emotion.emotioncontrol.fragments.statusbar.TrafficSettingsFragment;
 import com.emotion.emotioncontrol.fragments.general.RecentsSettingsFragment;
+import com.emotion.emotioncontrol.fragments.applauncher.AppLauncherTabHostFragment;
+import com.emotion.emotioncontrol.fragments.applauncher.GestureAnywhereSettings;
 
 import com.emotion.emotioncontrol.fragments.ui.UITabHostFragment;
 import com.emotion.emotioncontrol.fragments.ui.DisplayAnimationsSettings;
@@ -115,26 +117,30 @@ public class MainActivity extends Activity
                 break;
 
             case 1:
-                fragment = new LockScreenSettingsFragment();
+                fragment = new AppLauncherTabHostFragment();
                 break;
 
             case 2:
-                fragment = new NotificationsDrawerFragment();
+                fragment = new LockScreenSettingsFragment();
                 break;
 
             case 3:
-                fragment = new PowerMenuSettingsFragment();
+                fragment = new NotificationsDrawerFragment();
                 break;
 
             case 4:
-                fragment = new SoundTabHostFragment();
+                fragment = new PowerMenuSettingsFragment();
                 break;
 
             case 5:
-                fragment = new StatusBarTabHostFragment();
+                fragment = new SoundTabHostFragment();
                 break;
 
             case 6:
+                fragment = new StatusBarTabHostFragment();
+                break;
+
+            case 7:
                 fragment = new UITabHostFragment();
                 break;
         }
