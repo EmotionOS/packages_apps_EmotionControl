@@ -45,6 +45,9 @@ import com.emotion.emotioncontrol.fragments.statusbar.StatusBarTabHostFragment;
 import com.emotion.emotioncontrol.fragments.statusbar.StatusbarSettingsFragment;
 import com.emotion.emotioncontrol.fragments.statusbar.TrafficSettingsFragment;
 
+import com.emotion.emotioncontrol.fragments.ui.UITabHostFragment;
+import com.emotion.emotioncontrol.fragments.ui.DisplayAnimationsSettings;
+
 import cyanogenmod.providers.CMSettings;
 
 public class MainActivity extends Activity
@@ -115,6 +118,10 @@ public class MainActivity extends Activity
 
             case 3:
                 fragment = new StatusBarTabHostFragment();
+                break;
+
+            case 4:
+                fragment = new UITabHostFragment();
                 break;
         }
         return fragment;
