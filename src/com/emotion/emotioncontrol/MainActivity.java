@@ -42,6 +42,7 @@ import com.emotion.emotioncontrol.fragments.sound.LiveVolumeFragment;
 
 import com.emotion.emotioncontrol.fragments.statusbar.StatusBarTabHostFragment;
 import com.emotion.emotioncontrol.fragments.statusbar.StatusbarSettingsFragment;
+import com.emotion.emotioncontrol.fragments.statusbar.TrafficSettingsFragment;
 
 import cyanogenmod.providers.CMSettings;
 
