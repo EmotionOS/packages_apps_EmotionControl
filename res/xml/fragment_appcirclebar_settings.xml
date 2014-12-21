@@ -34,4 +34,37 @@
         android:summary="@string/app_circle_bar_included_apps_summary"
         android:dependency="enable_app_circle_bar" />
 
+    <com.emotion.emotioncontrol.widgets.SeekBarPreference
+        android:key="trigger_width"
+        android:title="@string/trigger_width_title"
+        android:summary="@string/trigger_width_summary"
+        android:max="64"
+        emotion:minimum="4"
+        emotion:defaultVal="4"
+        emotion:unitsLeft=""
+        emotion:unitsRight="px"
+        android:dependency="enable_app_circle_bar" />
+
+    <com.emotion.emotioncontrol.widgets.SeekBarPreference
+        android:key="trigger_top"
+        android:title="@string/trigger_top_title"
+        android:summary="@string/trigger_top_summary"
+        android:max="99"
+        emotion:minimum="0"
+        emotion:defaultVal="0"
+        emotion:unitsLeft=""
+        emotion:unitsRight="%"
+        android:dependency="enable_app_circle_bar" />
+
+    <com.emotion.emotioncontrol.widgets.SeekBarPreference
+        android:key="trigger_bottom"
+        android:title="@string/trigger_bottom_title"
+        android:summary="@string/trigger_bottom_summary"
+        android:max="100"
+        emotion:minimum="1"
+        emotion:defaultVal="100"
+        emotion:unitsLeft=""
+        emotion:unitsRight="%"
+        android:dependency="enable_app_circle_bar" />
+
 </PreferenceScreen>
