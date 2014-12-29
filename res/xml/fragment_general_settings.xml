@@ -32,7 +32,6 @@
         <intent android:action="android.intent.action.MAIN"
             android:targetPackage="com.cyanogenmod.lockclock"
             android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
-<<<<<<< HEAD
         </PreferenceScreen>
     </PreferenceCategory>
 
@@ -54,17 +53,6 @@
 
     </PreferenceCategory>
 
-    <!-- Toast icons settings -->
-    <PreferenceCategory
-        android:key="toast_icon_cat"
-        android:title="@string/toast_icon_title_cat" >
-
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
-        android:key="toast_icon"
-        android:title="@string/toast_icon_title"
-        android:summary="@string/toast_icon_summary"
-        android:defaultValue="true" />
-    </PreferenceCategory>
 
     <!-- RomStats -->
     <PreferenceCategory
@@ -76,7 +64,6 @@
     </PreferenceCategory>
 
 </PreferenceScreen>
-=======
     </PreferenceScreen>
 
     <com.aokp.romcontrol.fragments.general.HostnamePreference
@@ -91,4 +78,3 @@
             android:persistent="false" />
 
 </PreferenceScreen>
->>>>>>> 6f22245... ROMControl - XuiMod: Toast Animations [2/2]
