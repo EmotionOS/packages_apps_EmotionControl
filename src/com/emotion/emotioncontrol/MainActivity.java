@@ -34,6 +34,7 @@ import com.emotion.emotioncontrol.fragments.NavigationDrawerFragment;
 import com.emotion.emotioncontrol.fragments.general.GeneralTabHostFragment;
 import com.emotion.emotioncontrol.fragments.general.GeneralSettingsFragment;
 import com.emotion.emotioncontrol.fragments.general.HostnamePreference;
+import com.emotion.emotioncontrol.fragments.general.WakelockBlockerFragment;
 
 import com.emotion.emotioncontrol.fragments.sound.SoundTabHostFragment;
 import com.emotion.emotioncontrol.fragments.sound.SoundSettingsFragment;
