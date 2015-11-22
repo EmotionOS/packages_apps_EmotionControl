@@ -106,6 +106,8 @@ public class StatusbarSettingsFragment extends Fragment {
         private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
         private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
 
+        private static final String PREF_BATTERY_BAR = "batterybar";
+
         private static final String KEY_SHOW_FOURG = "show_fourg";
 
         private ListPreference mStatusBarDate;
@@ -122,6 +124,8 @@ public class StatusbarSettingsFragment extends Fragment {
         private ListPreference mStatusBarClockFontSize;
 
         private SwitchPreference mShowFourG;
+
+        private Preference mBatteryBar;
 
         private boolean mCheckPreferences;
 
@@ -144,6 +148,7 @@ public class StatusbarSettingsFragment extends Fragment {
             mQuickPulldown = (ListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
             mFontStyle = (ListPreference) findPreference(STATUS_BAR_CLOCK_FONT_STYLE);
             mStatusBarClockFontSize = (ListPreference) findPreference(STATUS_BAR_CLOCK_FONT_SIZE);
+            mBatteryBar = prefSet.findPreference(PREF_BATTERY_BAR);
 
             int showDate = Settings.System.getInt(resolver,
                     Settings.System.STATUS_BAR_DATE, 0);
@@ -258,6 +263,16 @@ public class StatusbarSettingsFragment extends Fragment {
                 mContentResolver = context.getContentResolver();
             }
             return mContentResolver;
+        }
+
+        @Override
+        public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+            if (preference == mBatteryBar) {
+                Intent intent = new Intent(getActivity(), BatteryBar.class);
+                getActivity().startActivity(intent);
+                return true;
+            }
+            return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
 
         public boolean onPreferenceChange(Preference preference, Object newValue) {

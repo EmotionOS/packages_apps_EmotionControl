@@ -100,6 +100,10 @@
         android:entryValues="@array/status_bar_battery_percentage_values"
         android:defaultValue="0" />
 
+    <Preference
+        android:key="batterybar"
+        android:title="@string/battery_bar_title" />
+
     <ListPreference
         android:key="qs_quick_pulldown"
         android:title="@string/status_bar_quick_qs_pulldown_title"

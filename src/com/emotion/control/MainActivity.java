@@ -48,6 +48,7 @@ import com.emotion.control.fragments.sound.LiveVolumeFragment;
 import com.emotion.control.fragments.statusbar.StatusBarTabHostFragment;
 import com.emotion.control.fragments.statusbar.StatusbarSettingsFragment;
 import com.emotion.control.fragments.statusbar.TrafficSettingsFragment;
+import com.emotion.control.fragments.statusbar.BatteryBar;
 import com.emotion.control.fragments.general.RecentsSettingsFragment;
 import com.emotion.control.fragments.applauncher.AppLauncherTabHostFragment;
 import com.emotion.control.fragments.applauncher.AppCircleBarSettings;
