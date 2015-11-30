@@ -33,6 +33,11 @@ import android.view.View;
 import com.emotion.emotioncontrol.fragments.general.GeneralTabHostFragment;
 import com.emotion.emotioncontrol.fragments.general.GeneralSettingsFragment;
 import com.emotion.emotioncontrol.fragments.NavigationDrawerFragment;
+
+import com.emotion.emotioncontrol.fragments.sound.SoundTabHostFragment;
+import com.emotion.emotioncontrol.fragments.sound.SoundSettingsFragment;
+import com.emotion.emotioncontrol.fragments.sound.LiveVolumeFragment;
+
 import cyanogenmod.providers.CMSettings;
 
 public class MainActivity extends Activity
@@ -91,6 +96,10 @@ public class MainActivity extends Activity
         switch (position) {
             case 0:
                 fragment = new GeneralTabHostFragment();
+                break;
+
+            case 1:
+                fragment = new SoundTabHostFragment();
                 break;
         }
         return fragment;
