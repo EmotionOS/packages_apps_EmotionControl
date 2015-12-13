@@ -61,6 +61,11 @@ import com.emotion.control.fragments.ui.AnimBarPreference;
 import com.emotion.control.fragments.ui.AnimationControls;
 import com.emotion.control.fragments.ui.TransparencyPornFragment;
 
+import com.emotion.control.fragments.pie.PieColorFragment;
+import com.emotion.control.fragments.pie.PieControlFragment;
+import com.emotion.control.fragments.pie.PieTabHostFragment;
+import com.emotion.control.fragments.pie.PieTargetsFragment;
+
 import cyanogenmod.providers.CMSettings;
 
 public class MainActivity extends Activity
@@ -142,14 +147,18 @@ public class MainActivity extends Activity
                 break;
 
             case 6:
-                fragment = new SoundTabHostFragment();
+                fragment = new PieTabHostFragment();
                 break;
 
             case 7:
-                fragment = new StatusBarTabHostFragment();
+                fragment = new SoundTabHostFragment();
                 break;
 
             case 8:
+                fragment = new StatusBarTabHostFragment();
+                break;
+
+            case 9:
                 fragment = new UITabHostFragment();
                 break;
         }

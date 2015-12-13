@@ -87,6 +87,10 @@
         <activity android:name="com.emotion.control.fragments.applauncher.GestureAnywhereCreateGestureActivity" />
 	<activity android:name="com.emotion.control.fragments.ButtonSettingsFragment" />
         <activity android:name="com.emotion.control.fragments.statusbar.BatteryBar" />
+        <activity android:name="com.emotion.control.fragments.pie.PieColorFragment" />
+        <activity android:name="com.emotion.control.fragments.pie.PieControlFragment" />
+        <activity android:name="com.emotion.control.fragments.pie.PieTabHostFragment" />
+        <activity android:name="com.emotion.control.fragments.pie.PieTargetsFragment" />
         <activity android:name=".romstats.AnonymousStats"
             android:label="@string/stats_title" >
             <intent-filter>
@@ -118,6 +122,20 @@
             android:exported="false"
             android:label="ReportingService" >
         </service>
+
+        <!-- PA Pie settings activity. -->
+        <activity android:name="ROMControl$PieControlSettingsActivity"
+                android:label="@string/pa_pie_control_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.emotion.control.FRAGMENT_CLASS"
+                android:value="com.emotion.control.fragments.pie.PieControl" />
+            <meta-data android:name="com.emotion.control.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/pie_settings_main" />
+        </activity>
     </application>
 
 </manifest>
