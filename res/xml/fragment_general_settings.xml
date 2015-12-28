@@ -43,6 +43,10 @@
         android:entryValues="@array/screenshot_type_values"
         android:key="screenshot_type"
         android:title="@string/screenshot_type_title" />
+
+    <com.emotion.emotioncontrol.widget.NumberPickerPreference
+        android:key="screenshot_delay"
+        android:title="@string/powermenu_screenshot_delay_title" />
     </PreferenceCategory>
 
     <!-- Hostname settings -->

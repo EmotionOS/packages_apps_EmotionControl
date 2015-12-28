@@ -47,6 +47,7 @@ import android.view.ViewGroup;
 
 import com.emotion.emotioncontrol.R;
 import com.emotion.emotioncontrol.util.Helpers;
+import com.emotion.emotioncontrol.widgets.NumberPickerPreference;
 
 import java.io.File;
 import java.io.IOException;
@@ -88,9 +89,15 @@ public class GeneralSettingsFragment extends Fragment {
         // Package name of the cLock app
         public static final String LOCKCLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
+        private static final int MIN_DELAY_VALUE = 1;
+        private static final int MAX_DELAY_VALUE = 30;
+
         private static final String SCREENSHOT_TYPE = "screenshot_type";
+        private static final String SCREENSHOT_DELAY = "screenshot_delay";
+        private static final String SCREENSHOT_SUMMARY = "Delay is set to ";
 
         private ListPreference mScreenshotType;
+        private NumberPickerPreference mScreenshotDelay;
 
         private Context mContext;
         private Preference mLockClock;
@@ -115,6 +122,15 @@ public class GeneralSettingsFragment extends Fragment {
             mScreenshotType.setValue(String.valueOf(mScreenshotTypeValue));
             mScreenshotType.setSummary(mScreenshotType.getEntry());
             mScreenshotType.setOnPreferenceChangeListener(this);
+
+            mScreenshotDelay = (NumberPickerPreference) findPreference(SCREENSHOT_DELAY);
+            mScreenshotDelay.setOnPreferenceChangeListener(this);
+            mScreenshotDelay.setMinValue(MIN_DELAY_VALUE);
+            mScreenshotDelay.setMaxValue(MAX_DELAY_VALUE);
+            int ssDelay = Settings.System.getInt(resolver,
+                    Settings.System.SCREENSHOT_DELAY, 1);
+            mScreenshotDelay.setCurrentValue(ssDelay);
+            updateScreenshotDelaySummary(ssDelay);
 
         }
 
@@ -149,6 +165,12 @@ public class GeneralSettingsFragment extends Fragment {
                         Settings.System.SCREENSHOT_TYPE, mScreenshotTypeValue);
                 mScreenshotType.setValue(String.valueOf(mScreenshotTypeValue));
                 return true;
+            } else if (preference == mScreenshotDelay) {
+                int mScreenshotDelayValue = Integer.parseInt(newValue.toString());
+                Settings.System.putInt(resolver, Settings.System.SCREENSHOT_DELAY,
+                        mScreenshotDelayValue);
+                updateScreenshotDelaySummary(mScreenshotDelayValue);
+                return true;
             }
             return false;
         }
@@ -169,6 +191,11 @@ public class GeneralSettingsFragment extends Fragment {
         @Override
         public void onResume() {
             super.onResume();
+        }
+
+        private void updateScreenshotDelaySummary(int screenshotDelay) {
+            mScreenshotDelay.setSummary(
+                    getResources().getString(R.string.powermenu_screenshot_delay_message, screenshotDelay));
         }
     }
 }

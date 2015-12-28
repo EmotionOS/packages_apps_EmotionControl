@@ -229,6 +229,10 @@
     <string name="screenshot_type_fullscreen">Take fullscreen screenshots</string>
     <string name="screenshot_type_partial">Drag selection on the area you want to take as a screenshot</string>
 
+    <!-- Screenshot delay -->
+    <string name="powermenu_screenshot_delay_title">Screenshot delay</string>
+    <string name="powermenu_screenshot_delay_message">Delay currently set to %1$s seconds</string>
+
     <!-- Hostname setting -->
     <string name="device_hostname_title_cat">Hostname setting</string>
     <string name="device_hostname">Device hostname</string>
