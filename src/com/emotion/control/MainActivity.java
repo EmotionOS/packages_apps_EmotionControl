@@ -60,6 +60,7 @@ import com.emotion.control.fragments.ui.DisplayAnimationsSettings;
 import com.emotion.control.fragments.ui.AnimBarPreference;
 import com.emotion.control.fragments.ui.AnimationControls;
 import com.emotion.control.fragments.ui.TransparencyPornFragment;
+import com.emotion.control.fragments.ui.BlurPersonalizations;
 
 import com.emotion.control.fragments.pie.PieColorFragment;
 import com.emotion.control.fragments.pie.PieControlFragment;
