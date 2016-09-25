@@ -110,4 +110,10 @@
         android:summary="@string/qs_battery_easy_toggle_summary"
         android:defaultValue="false" />
 
+    <com.emotion.emotioncontrol.settings.SecureSettingSwitchPreference
+        android:key="qs_fancy_animation"
+        android:title="@string/qs_fancy_animation_title"
+        android:summary="@string/qs_fancy_animation_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
