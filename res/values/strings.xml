@@ -87,6 +87,11 @@
     <!-- General -->
     <string name="general_settings">General settings</string>
 
+    <!-- Toast Icons -->
+    <string name="toast_icon_title_Cat">Toast settings</string>
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_summary">Show app icon behind toast notification</string>
+
     <!-- LockClocK -->
     <string name="lock_clock_title_cat">LockClock Widget</string>
     <string name="lock_clock_title">cLock settings</string>

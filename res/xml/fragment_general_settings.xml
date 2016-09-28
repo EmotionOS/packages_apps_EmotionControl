@@ -35,6 +35,7 @@
         </PreferenceScreen>
     </PreferenceCategory>
 
+    <!-- Hostname settings -->
     <PreferenceCategory
         android:key="device_hostname_cat"
         android:title="@string/device_hostname_title_cat" />
@@ -50,6 +51,18 @@
         android:inputType="textNoSuggestions"
         android:persistent="false" />
 
+    </PreferenceCategory>
+
+    <!-- Toast icons settings -->
+    <PreferenceCategory
+        android:key="toast_icon_cat"
+        android:title="@string/toast_icon_title_cat" />
+
+    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+        android:key="toast_icon"
+        android:title="@string/toast_icon_title"
+        android:summary="@string/toast_icon_summary"
+        android:defaultValue="true" />
     </PreferenceCategory>
 
     <!-- RomStats -->
