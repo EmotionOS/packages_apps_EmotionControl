@@ -21,14 +21,17 @@
     <string-array name="navigation_drawer_entries" translatable="false">
         <item>@string/category_general</item>
         <item>@string/category_sound</item>
+        <item>@string/category_statusbar</item>
     </string-array>
     <string-array name="navigation_drawer_values" translatable="false">
         <item>general</item>
         <item>sound</item>
+        <item>statusbar</item>
     </string-array>
     <string-array name="navigation_drawer_icons" translatable="false">
         <item>@drawable/ic_emotion_control_general</item>
         <item>@drawable/ic_rom_control_sound</item>
+        <item>@drawable/ic_rom_control_signal</item>
     </string-array>
 
     <string-array name="less_notification_sounds_entries">

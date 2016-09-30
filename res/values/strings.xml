@@ -82,13 +82,14 @@
     <!-- Header Strings -->
     <string name="category_general">General</string>
     <string name="category_sound">Sound</string>
+    <string name="category_statusbar">Statusbar</string>
 
     <!-- General Cat starts -->
     <!-- General -->
     <string name="general_settings">General settings</string>
 
     <!-- Toast Icons -->
-    <string name="toast_icon_title_Cat">Toast settings</string>
+    <string name="toast_icon_title_cat">Toast settings</string>
     <string name="toast_icon_title">Toast icon</string>
     <string name="toast_icon_summary">Show app icon behind toast notification</string>
 
@@ -194,5 +195,15 @@
     <string name="preview_romname_title">ROM Name</string>    
     <string name="preview_romversion_title">Emotion Version</string>
     <string name="preview_buildtype_title">Emotion Build Type</string>
+
+    <!-- StatusBar Cat starts -->
+    <!-- Sound settings -->
+    <string name="statusbar_settings">StatusBar settings</string>
+    
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">Superuser indicator</string>
+    <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
+    <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
+    <!-- StatusBar Cat ends -->
 
 </resources>

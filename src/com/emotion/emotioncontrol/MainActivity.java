@@ -39,6 +39,9 @@ import com.emotion.emotioncontrol.fragments.sound.SoundTabHostFragment;
 import com.emotion.emotioncontrol.fragments.sound.SoundSettingsFragment;
 import com.emotion.emotioncontrol.fragments.sound.LiveVolumeFragment;
 
+import com.emotion.emotioncontrol.fragments.statusbar.StatusBarTabHostFragment;
+import com.emotion.emotioncontrol.fragments.statusbar.StatusbarSettingsFragment;
+
 import cyanogenmod.providers.CMSettings;
 
 public class MainActivity extends Activity
@@ -101,6 +104,10 @@ public class MainActivity extends Activity
 
             case 1:
                 fragment = new SoundTabHostFragment();
+                break;
+
+            case 2:
+                fragment = new StatusBarTabHostFragment();
                 break;
         }
         return fragment;

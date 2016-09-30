@@ -38,7 +38,7 @@
     <!-- Hostname settings -->
     <PreferenceCategory
         android:key="device_hostname_cat"
-        android:title="@string/device_hostname_title_cat" />
+        android:title="@string/device_hostname_title_cat" >
 
     <com.emotion.emotioncontrol.fragments.general.HostnamePreference
         android:key="device_hostname"
@@ -56,7 +56,7 @@
     <!-- Toast icons settings -->
     <PreferenceCategory
         android:key="toast_icon_cat"
-        android:title="@string/toast_icon_title_cat" />
+        android:title="@string/toast_icon_title_cat" >
 
     <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
         android:key="toast_icon"
