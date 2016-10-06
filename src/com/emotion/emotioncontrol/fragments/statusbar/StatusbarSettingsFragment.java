@@ -37,6 +37,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -102,6 +103,8 @@ public class StatusbarSettingsFragment extends Fragment {
         private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
         private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
 
+        private static final String KEY_SHOW_FOURG = "show_fourg";
+
         private ListPreference mStatusBarDate;
         private ListPreference mStatusBarDateStyle;
         private ListPreference mStatusBarDateFormat;
@@ -111,6 +114,8 @@ public class StatusbarSettingsFragment extends Fragment {
         private ListPreference mStatusBarBattery;
         private ListPreference mStatusBarBatteryShowPercent;
         private ListPreference mQuickPulldown;
+
+        private SwitchPreference mShowFourG;
 
         private boolean mCheckPreferences;
 
@@ -126,15 +131,6 @@ public class StatusbarSettingsFragment extends Fragment {
             addPreferencesFromResource(R.xml.fragment_statusbar_settings);
             PreferenceScreen prefSet = getPreferenceScreen();
             ContentResolver resolver = getActivity().getContentResolver();
-
-            PackageManager pm = getActivity().getPackageManager();
-            Resources systemUiResources;
-            try {
-                systemUiResources = pm.getResourcesForApplication("com.android.systemui");
-            } catch (Exception e) {
-                Log.e(TAG, "can't access systemui resources",e);
-                return null;
-            }
 
             mStatusBarDate = (ListPreference) findPreference(STATUS_BAR_DATE);
             mStatusBarDateStyle = (ListPreference) findPreference(STATUS_BAR_DATE_STYLE);
@@ -202,6 +198,13 @@ public class StatusbarSettingsFragment extends Fragment {
             mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
             enableStatusBarBatteryDependents(batteryStyle);
             mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
+
+            // Show 4G
+            mShowFourG = (SwitchPreference) prefSet.findPreference(KEY_SHOW_FOURG);
+            PackageManager pm = getActivity().getPackageManager();
+            if (!pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
+                prefSet.removePreference(mShowFourG);
+            }
 
             return prefSet;
         }
