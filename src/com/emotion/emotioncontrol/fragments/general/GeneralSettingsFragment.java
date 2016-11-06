@@ -76,7 +76,8 @@ public class GeneralSettingsFragment extends Fragment {
         return v;
     }
 
-    public static class GeneralSettingsPreferenceFragment extends PreferenceFragment {
+    public static class GeneralSettingsPreferenceFragment extends PreferenceFragment
+            implements OnPreferenceChangeListener {
 
         public GeneralSettingsPreferenceFragment() {
 
@@ -86,6 +87,10 @@ public class GeneralSettingsFragment extends Fragment {
         private static final String KEY_LOCKCLOCK = "lock_clock";
         // Package name of the cLock app
         public static final String LOCKCLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
+
+        private static final String SCREENSHOT_TYPE = "screenshot_type";
+
+        private ListPreference mScreenshotType;
 
         private Context mContext;
         private Preference mLockClock;
@@ -101,6 +106,16 @@ public class GeneralSettingsFragment extends Fragment {
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             createCustomView();
+
+            ContentResolver resolver = getActivity().getContentResolver();
+
+            mScreenshotType = (ListPreference) findPreference(SCREENSHOT_TYPE);
+            int mScreenshotTypeValue = Settings.System.getInt(resolver,
+                    Settings.System.SCREENSHOT_TYPE, 0);
+            mScreenshotType.setValue(String.valueOf(mScreenshotTypeValue));
+            mScreenshotType.setSummary(mScreenshotType.getEntry());
+            mScreenshotType.setOnPreferenceChangeListener(this);
+
         }
 
         private PreferenceScreen createCustomView() {
@@ -120,6 +135,22 @@ public class GeneralSettingsFragment extends Fragment {
             mStatsEmotion = prefSet.findPreference(PREF_STATS_EMOTION);
 
             return prefSet;
+
+        }
+
+        @Override
+        public boolean onPreferenceChange(Preference preference, Object newValue) {
+            ContentResolver resolver = getActivity().getContentResolver();
+            if  (preference == mScreenshotType) {
+                int mScreenshotTypeValue = Integer.parseInt(((String) newValue).toString());
+                mScreenshotType.setSummary(
+                        mScreenshotType.getEntries()[mScreenshotTypeValue]);
+                Settings.System.putInt(resolver,
+                        Settings.System.SCREENSHOT_TYPE, mScreenshotTypeValue);
+                mScreenshotType.setValue(String.valueOf(mScreenshotTypeValue));
+                return true;
+            }
+            return false;
         }
 
         @Override

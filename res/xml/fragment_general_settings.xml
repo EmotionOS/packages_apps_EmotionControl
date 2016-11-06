@@ -35,6 +35,16 @@
         </PreferenceScreen>
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="screenshot_type_cat"
+        android:title="@string/screenshot_type_title_cat" >
+    <ListPreference
+        android:entries="@array/screenshot_type_entries"
+        android:entryValues="@array/screenshot_type_values"
+        android:key="screenshot_type"
+        android:title="@string/screenshot_type_title" />
+    </PreferenceCategory>
+
     <!-- Hostname settings -->
     <PreferenceCategory
         android:key="device_hostname_cat"
