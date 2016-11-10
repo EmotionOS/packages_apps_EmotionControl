@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2016, Emotroid Team
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- EmotionControl -->
+    <string name="app_name">Emotion control</string>
+    <string name="emotion_control">Emotion control</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Menu Items -->
+    <string name="menu_show_drawer_icon">Show in app drawer</string>
+
+    <!-- Generic -->
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="center">Centered</string>
+    <string name="top">Top</string>
+    <string name="bottom">Bottom</string>
+    <string name="add">Add</string>
+    <string name="help">Help</string>
+    <string name="attention">Attention</string>
+    <string name="enabled">Enabled</string>
+    <string name="default_string">Default</string>
+    <string name="choose_app">Choose application</string>
+    <string name="reset_message">Reset all entries to default?</string>
+    <string name="dlg_reset_values_message">Reset values to default?</string>
+    <string name="dlg_reset_emotion">Emotion</string>
+    <string name="dlg_reset_android">Android</string>
+    <string name="colors_title">Colors</string>
+    <string name="text_title">Text</string>
+
+    <!-- MultiChoiceSetting -->
+    <plurals name="multichoice_at_least">
+        <item quantity="one">Please select at least <xliff:g id="number">%d</xliff:g> item.</item>
+        <item quantity="other">Please select at least <xliff:g id="number">%d</xliff:g> items.</item>
+    </plurals>
+    <plurals name="multichoice_at_most">
+        <item quantity="one">Please select at most <xliff:g id="number">%d</xliff:g> item.</item>
+        <item quantity="other">Please select at most <xliff:g id="number">%d</xliff:g> items.</item>
+    </plurals>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color picker</string>
+    <string name="press_color_to_apply">Press on color to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint" translatable="false">#FF000000</string>
+    <string name="set">Set</string>
+    <string name="default_color">Default</string>
+
+    <!-- Shortcut picker -->
+    <string name="use_custom_app_title">Use custom application</string>
+    <string name="use_custom_app_summary">Use custom application instead of the recent applications dialog</string>
+    <string name="select_custom_app_title">Select custom application</string>
+    <string name="group_applications">Applications</string>
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom app</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+
+    <!-- Header Strings -->
+    <string name="category_general">General</string>
+
+    <!-- General Cat starts -->
+    <!-- General -->
+    <string name="general_settings">General settings</string>
+
+    <!-- LockClocK -->
+    <string name="lock_clock_title">cLock settings</string>
+    <string name="lock_clock_summary">View or change how the \'cLock\' widget will be displayed.</string>
+    <!-- General Cat ends -->
+
+</resources>
