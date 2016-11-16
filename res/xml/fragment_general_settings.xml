@@ -35,6 +35,23 @@
         </PreferenceScreen>
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="device_hostname_cat"
+        android:title="@string/device_hostname_title_cat" />
+
+    <com.emotion.emotioncontrol.fragments.general.HostnamePreference
+        android:key="device_hostname"
+        android:title="@string/device_hostname"
+        android:dialogTitle="@string/device_hostname"
+        android:positiveButtonText="@string/save"
+        android:negativeButtonText="@string/cancel"
+        android:selectAllOnFocus="true"
+        android:imeOptions="actionDone"
+        android:inputType="textNoSuggestions"
+        android:persistent="false" />
+
+    </PreferenceCategory>
+
     <!-- RomStats -->
     <PreferenceCategory
         android:key="stats_cat"

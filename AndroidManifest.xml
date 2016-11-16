@@ -66,6 +66,7 @@
         <activity android:name="com.emotion.emotioncontrol.fragments.sound.SoundSettingsFragment" />
         <activity android:name="com.emotion.emotioncontrol.fragments.sound.LiveVolumeFragment" />
         <activity android:name="com.emotion.emotioncontrol.fragments.NavigationDrawerFragment" />
+        <activity android:name="com.emotion.emotioncontrol.fragments.general.HostnamePreference" />
         <activity android:name=".romstats.AnonymousStats"
             android:label="@string/stats_title" >
             <intent-filter>
