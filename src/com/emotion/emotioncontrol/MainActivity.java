@@ -31,6 +31,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.emotion.emotioncontrol.fragments.NavigationDrawerFragment;
+import com.emotion.emotioncontrol.fragments.NotificationsDrawerFragment;
 import com.emotion.emotioncontrol.fragments.general.GeneralTabHostFragment;
 import com.emotion.emotioncontrol.fragments.general.GeneralSettingsFragment;
 import com.emotion.emotioncontrol.fragments.general.HostnamePreference;
@@ -105,10 +106,14 @@ public class MainActivity extends Activity
                 break;
 
             case 1:
-                fragment = new SoundTabHostFragment();
+                fragment = new NotificationsDrawerFragment();
                 break;
 
             case 2:
+                fragment = new SoundTabHostFragment();
+                break;
+
+            case 3:
                 fragment = new StatusBarTabHostFragment();
                 break;
         }
