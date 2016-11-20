@@ -22,15 +22,20 @@
     android:title="@string/general_settings">
 
     <!-- LockClock settings -->
-    <PreferenceScreen
+    <PreferenceCategory
+        android:key="lock_clock_cat"
+        android:title="@string/lock_clock_title_cat" >
+        <PreferenceScreen
         android:key="lock_clock"
         android:title="@string/lock_clock_title"
         android:summary="@string/lock_clock_summary">
         <intent android:action="android.intent.action.MAIN"
             android:targetPackage="com.cyanogenmod.lockclock"
             android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
-    </PreferenceScreen>
+        </PreferenceScreen>
+    </PreferenceCategory>
 
+    <!-- RomStats -->
     <PreferenceCategory
         android:key="stats_cat"
         android:title="@string/stats_title_cat" >
