@@ -21,13 +21,25 @@ import android.app.ActivityManager;
 import android.app.Fragment;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.IBinder;
+import android.os.Parcel;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.os.SystemProperties;
+import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
+import android.provider.Settings;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -35,6 +47,15 @@ import android.view.ViewGroup;
 
 import com.emotion.emotioncontrol.R;
 import com.emotion.emotioncontrol.util.Helpers;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.DataOutputStream;
+ 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 
 public class GeneralSettingsFragment extends Fragment {
 
@@ -68,6 +89,13 @@ public class GeneralSettingsFragment extends Fragment {
 
         private Context mContext;
         private Preference mLockClock;
+        private Preference mStatsEmotion;
+        private static final String PREF_STATS_EMOTION = "emotion_stats";
+
+        public static final String STATS_PACKAGE_NAME = "com.emotion.emotioncontrol";
+        public static Intent INTENT_STATS = new Intent(Intent.ACTION_MAIN)
+                .setClassName(STATS_PACKAGE_NAME, STATS_PACKAGE_NAME + ".romstats.AnonymousStats");
+
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -88,7 +116,18 @@ public class GeneralSettingsFragment extends Fragment {
             if (!Helpers.isPackageInstalled(LOCKCLOCK_PACKAGE_NAME, pm)) {
                 prefSet.removePreference(mLockClock);
             }
+
+            mStatsEmotion = prefSet.findPreference(PREF_STATS_EMOTION);
+
             return prefSet;
+        }
+
+        @Override
+        public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+            if (preference == mStatsEmotion) {
+                startActivity(INTENT_STATS);
+            }
+            return false;
         }
 
         @Override

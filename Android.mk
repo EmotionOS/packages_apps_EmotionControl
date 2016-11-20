@@ -11,7 +11,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := android-support-v13 \
                                AndroidAsync \
                                gson \
                                jsr305 \
-                               org.cyanogenmod.platform.internal
+                               org.cyanogenmod.platform.internal \
+                               play
 
 LOCAL_SRC_FILES := $(call all-subdir-java-files, src)
 LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, res)
@@ -25,6 +26,9 @@ include frameworks/opt/setupwizard/library/common.mk
 include frameworks/base/packages/SettingsLib/common.mk
 
 LOCAL_JAVA_LIBRARIES += org.cyanogenmod.hardware
+
+LOCAL_JAVA_LIBRARIES := org.apache.http.legacy
+
 include $(BUILD_PACKAGE)
 
 # Use the folloing include to make our test apk.
