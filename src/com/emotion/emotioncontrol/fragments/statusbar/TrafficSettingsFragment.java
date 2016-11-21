@@ -45,8 +45,6 @@ import com.android.internal.logging.MetricsLogger;
 import com.emotion.emotioncontrol.R;
 import com.emotion.emotioncontrol.widgets.SeekBarPreferenceCham;
 
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
-
 public class TrafficSettingsFragment extends Fragment {
 
     @Override
@@ -75,7 +73,6 @@ public class TrafficSettingsFragment extends Fragment {
         private static final String TAG = "TrafficSettingsFragment";
 
         private static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
-        private static final String NETWORK_TRAFFIC_COLOR = "network_traffic_color";
         private static final String NETWORK_TRAFFIC_UNIT = "network_traffic_unit";
         private static final String NETWORK_TRAFFIC_PERIOD = "network_traffic_period";
         private static final String NETWORK_TRAFFIC_AUTOHIDE = "network_traffic_autohide";
@@ -83,15 +80,11 @@ public class TrafficSettingsFragment extends Fragment {
         private static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
 
         private ListPreference mNetTrafficState;
-        private ColorPickerPreference mNetTrafficColor;
         private ListPreference mNetTrafficUnit;
         private ListPreference mNetTrafficPeriod;
         private SwitchPreference mNetTrafficAutohide;
         private SwitchPreference mNetTrafficHidearrow;
         private SeekBarPreferenceCham mNetTrafficAutohideThreshold;
-
-        private static final int MENU_RESET = Menu.FIRST;
-        private static final int DEFAULT_TRAFFIC_COLOR = 0xffffffff;
 
         private int mNetTrafficVal;
         private int MASK_UP;
@@ -132,15 +125,6 @@ public class TrafficSettingsFragment extends Fragment {
                 mNetTrafficAutohideThreshold.setValue(netTrafficAutohideThreshold / 1);
                 mNetTrafficAutohideThreshold.setOnPreferenceChangeListener(this);
 
-            mNetTrafficColor =
-                (ColorPickerPreference) prefSet.findPreference(NETWORK_TRAFFIC_COLOR);
-            mNetTrafficColor.setOnPreferenceChangeListener(this);
-            int intColor = Settings.System.getInt(getActivity().getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_COLOR, 0xffffffff);
-            String hexColor = String.format("#%08x", (0xffffffff & intColor));
-                mNetTrafficColor.setSummary(hexColor);
-                mNetTrafficColor.setNewPreviewColor(intColor);
-
             if (TrafficStats.getTotalTxBytes() != TrafficStats.UNSUPPORTED &&
                     TrafficStats.getTotalRxBytes() != TrafficStats.UNSUPPORTED) {
                 mNetTrafficVal = Settings.System.getInt(getActivity().getContentResolver(),
@@ -168,14 +152,12 @@ public class TrafficSettingsFragment extends Fragment {
         private void updateNetworkTrafficState(int mIndex) {
             if (mIndex <= 0) {
                 mNetTrafficUnit.setEnabled(false);
-                mNetTrafficColor.setEnabled(false);
                 mNetTrafficPeriod.setEnabled(false);
                 mNetTrafficAutohide.setEnabled(false);
                 mNetTrafficHidearrow.setEnabled(false);
                 mNetTrafficAutohideThreshold.setEnabled(false);
             } else {
                 mNetTrafficUnit.setEnabled(true);
-                mNetTrafficColor.setEnabled(true);
                 mNetTrafficPeriod.setEnabled(true);
                 mNetTrafficAutohide.setEnabled(true);
                 mNetTrafficHidearrow.setEnabled(true);
@@ -183,47 +165,8 @@ public class TrafficSettingsFragment extends Fragment {
             }
         }
 
-        @Override
-        public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-            menu.add(0, MENU_RESET, 0, R.string.network_traffic_color_reset)
-                    .setIcon(R.drawable.ic_settings_backup)
-                    .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-        }
-
-        @Override
-        public boolean onOptionsItemSelected(MenuItem item) {
-            switch (item.getItemId()) {
-                case MENU_RESET:
-                    resetToDefault();
-                    return true;
-                default:
-                    return super.onContextItemSelected(item);
-            }
-        }
-
-        private void resetToDefault() {
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-            alertDialog.setTitle(R.string.network_traffic_color_reset);
-            alertDialog.setMessage(R.string.network_traffic_color_reset_message);
-            alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    NetworkTrafficColorReset();
-                }
-            });
-            alertDialog.setNegativeButton(R.string.cancel, null);
-            alertDialog.create().show();
-     }
-
-        private void NetworkTrafficColorReset() {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_COLOR, DEFAULT_TRAFFIC_COLOR);
-
-            mNetTrafficColor.setNewPreviewColor(DEFAULT_TRAFFIC_COLOR);
-            String hexColor = String.format("#%08x", (0xffffffff & DEFAULT_TRAFFIC_COLOR));
-            mNetTrafficColor.setSummary(hexColor);
-        }
-
         public boolean onPreferenceChange(Preference preference, Object newValue) {
+            ContentResolver resolver = getActivity().getContentResolver();
             if (preference == mNetTrafficState) {
                 int intState = Integer.valueOf((String)newValue);
                 mNetTrafficVal = setBit(mNetTrafficVal, MASK_UP, getBit(intState, MASK_UP));
@@ -233,14 +176,6 @@ public class TrafficSettingsFragment extends Fragment {
                 int index = mNetTrafficState.findIndexOfValue((String) newValue);
                 mNetTrafficState.setSummary(mNetTrafficState.getEntries()[index]);
                 updateNetworkTrafficState(index);
-                return true;
-            } else if (preference == mNetTrafficColor) {
-                String hex = ColorPickerPreference.convertToARGB(
-                        Integer.valueOf(String.valueOf(newValue)));
-                preference.setSummary(hex);
-                int intHex = ColorPickerPreference.convertToColorInt(hex);
-                Settings.System.putInt(getActivity().getContentResolver(),
-                        Settings.System.NETWORK_TRAFFIC_COLOR, intHex);
                 return true;
             } else if (preference == mNetTrafficUnit) {
                 mNetTrafficVal = setBit(mNetTrafficVal, MASK_UNIT, ((String)newValue).equals("1"));
