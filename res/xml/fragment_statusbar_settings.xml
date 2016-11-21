@@ -19,9 +19,9 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/statusbar_settings"
-    xmlns:AOKP="http://schemas.android.com/apk/res/com.emotion.emotioncontrol" >
+    xmlns:EMOTION="http://schemas.android.com/apk/res/com.emotion.emotioncontrol" >
 
-    <com.aokp.romcontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
         android:key="show_su_indicator"
         android:title="@string/su_indicator"
         android:summaryOn="@string/su_indicator_summary_on"
