@@ -61,7 +61,7 @@
         </activity>
 
         <activity android:name="com.emotion.emotioncontrol.fragments.NavigationDrawerFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.NavigationDrawerFragment" />
+        <activity android:name="com.emotion.emotioncontrol.fragments.NotificationsDrawerFragment" />
         <activity android:name="com.emotion.emotioncontrol.fragments.general.GeneralTabHostFragment" />
         <activity android:name="com.emotion.emotioncontrol.fragments.general.GeneralSettingsFragment" />
 	<activity android:name="com.emotion.emotioncontrol.fragments.sound.SoundTabHostFragment" />

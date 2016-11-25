@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.emotionm.emotioncontrol.settings;
+package com.emotion.emotioncontrol.settings;
 
 import android.content.Context;
 import android.preference.SwitchPreference;
