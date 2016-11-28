@@ -75,6 +75,7 @@
         <activity android:name="com.emotion.emotioncontrol.fragments.ui.AnimBarPreference" />
         <activity android:name="com.emotion.emotioncontrol.fragments.ui.AnimationControls" />
         <activity android:name="com.emotion.emotioncontrol.fragments.ui.DisplayAnimationsSettings" />
+        <activity android:name="com.emotion.emotioncontrol.fragments.LockScreenSettingsFragment" />
         <activity android:name=".romstats.AnonymousStats"
             android:label="@string/stats_title" >
             <intent-filter>
