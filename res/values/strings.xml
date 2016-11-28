@@ -118,9 +118,9 @@
     <!-- Lockscreen Cat starts -->
     <string name="lockscreen_settings_title">Lockscreen</string>
 
-    <!-- Current on Lockscreen -->
-    <string name="lock_screen_show_current">Charging Current</string>
-    <string name="lock_screen_show_current_summary">Show Charging Current rate on lock screen</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
 
     <!-- Lockscreen Torch -->
     <string name="keyguard_torch_title">Lockscreen torch</string>

@@ -24,9 +24,9 @@
         android:title="@string/general_settings">
 
     <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
-        android:key="lock_screen_show_current"
-        android:title="@string/lock_screen_show_current"
-        android:summary="@string/lock_screen_show_current_summary"
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="false" />
 
     <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
