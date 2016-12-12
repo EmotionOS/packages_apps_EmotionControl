@@ -47,6 +47,7 @@ import com.emotion.emotioncontrol.fragments.sound.LiveVolumeFragment;
 import com.emotion.emotioncontrol.fragments.statusbar.StatusBarTabHostFragment;
 import com.emotion.emotioncontrol.fragments.statusbar.StatusbarSettingsFragment;
 import com.emotion.emotioncontrol.fragments.statusbar.TrafficSettingsFragment;
+import com.emotion.emotioncontrol.fragments.general.RecentsSettingsFragment;
 
 import com.emotion.emotioncontrol.fragments.ui.UITabHostFragment;
 import com.emotion.emotioncontrol.fragments.ui.DisplayAnimationsSettings;

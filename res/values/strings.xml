@@ -28,6 +28,15 @@
     <!-- Menu Items -->
     <string name="menu_show_drawer_icon">Show in app drawer</string>
 
+    <!-- Header Strings -->
+    <string name="category_general">General</string>
+    <string name="category_lockscreen">Lockscreen</string>
+    <string name="category_notifications_drawer">Notifications Drawer</string>
+    <string name="category_power_menu">Power menu</string>
+    <string name="category_sound">Sound</string>
+    <string name="category_statusbar">Statusbar</string>
+    <string name="category_ui">User Interface</string>
+
     <!-- Generic -->
     <string name="ok">OK</string>
     <string name="save">Save</string>
@@ -79,15 +88,6 @@
     <string name="select_custom_app_title">Select custom app</string>
     <string name="select_custom_activity_title">Select custom activity</string>
 
-    <!-- Header Strings -->
-    <string name="category_general">General</string>
-    <string name="category_lockscreen">Lockscreen</string>
-    <string name="category_notifications_drawer">Notifications Drawer</string>
-    <string name="category_power_menu">Power menu</string>
-    <string name="category_sound">Sound</string>
-    <string name="category_statusbar">Statusbar</string>
-    <string name="category_ui">User Interface</string>
-
     <!-- General Cat starts -->
     <!-- General -->
     <string name="general_settings">General settings</string>
@@ -105,6 +105,9 @@
     <!-- Hostname setting -->
     <string name="device_hostname_title_cat">Hostname setting</string>
     <string name="device_hostname">Device hostname</string>
+
+    <!-- Recents setting -->
+    <string name="recents_settings">Recents settings</string>
 
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Wakelock Blocker</string>
