@@ -18,7 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.emotion.romcontrol.R;
+import com.emotion.emotioncontrol.R;
 import com.emotion.emotioncontrol.widgets.SeekBarPreference;
 
 public class AppSideBarSettings extends Fragment {

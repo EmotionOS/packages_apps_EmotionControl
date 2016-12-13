@@ -17,7 +17,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/lockscreen_settings_title"
-    xmlns:emotion="http://schemas.android.com/apk/res-auto" >
+    xmlns:emotion="http://schemas.android.com/apk/com.emotion.emotioncontrol" >
 
     <PreferenceCategory
         android:key="lockscreen_general_settings"

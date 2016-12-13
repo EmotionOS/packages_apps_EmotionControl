@@ -19,7 +19,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/notifications_drawer_settings"
-    xmlns:EMOTION="http://schemas.android.com/apk/res/com.emotion.emotioncontrol" >
+    xmlns:emotion="http://schemas.android.com/apk/res/com.emotion.emotioncontrol" >
 
     <com.emotion.emotioncontrol.settings.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
