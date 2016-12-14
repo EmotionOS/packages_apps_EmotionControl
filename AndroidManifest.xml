@@ -75,6 +75,7 @@
         <activity android:name="com.emotion.emotioncontrol.fragments.ui.AnimBarPreference" />
         <activity android:name="com.emotion.emotioncontrol.fragments.ui.AnimationControls" />
         <activity android:name="com.emotion.emotioncontrol.fragments.ui.DisplayAnimationsSettings" />
+	<activity android:name="com.emotion.emotioncontrol.fragments.ui.TransparencyPornFragment" />
         <activity android:name="com.emotion.emotioncontrol.fragments.LockScreenSettingsFragment" />
 	<activity android:name="com.emotion.emotioncontrol.fragments.PowerMenuSettingsFragment" />
 	<activity android:name="com.emotion.emotioncontrol.fragments.general.RecentsSettingsFragment" />

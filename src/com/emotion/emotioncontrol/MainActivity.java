@@ -57,6 +57,7 @@ import com.emotion.emotioncontrol.fragments.ui.UITabHostFragment;
 import com.emotion.emotioncontrol.fragments.ui.DisplayAnimationsSettings;
 import com.emotion.emotioncontrol.fragments.ui.AnimBarPreference;
 import com.emotion.emotioncontrol.fragments.ui.AnimationControls;
+import com.emotion.emotioncontrol.fragments.ui.TransparencyPornFragment;
 
 import cyanogenmod.providers.CMSettings;
 
