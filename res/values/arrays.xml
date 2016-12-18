@@ -19,8 +19,8 @@
 
 <resources>
     <string-array name="navigation_drawer_entries" translatable="false">
-        <item>@string/category_app_launcher</item>
         <item>@string/category_general</item>
+        <item>@string/category_app_launcher</item>
         <item>@string/category_lockscreen</item>
         <item>@string/category_notifications_drawer</item>
         <item>@string/category_power_menu</item>
@@ -29,8 +29,8 @@
         <item>@string/category_ui</item>
     </string-array>
     <string-array name="navigation_drawer_values" translatable="false">
-        <item>applauncher</item>
         <item>general</item>
+        <item>applauncher</item>
         <item>lockscreen</item>
         <item>notifications_drawer</item>
         <item>power_menu</item>
