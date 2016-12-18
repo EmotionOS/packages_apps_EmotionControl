@@ -25,8 +25,8 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
+import android.content.res.Configuration;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.SystemProperties;
@@ -76,8 +76,9 @@ public class LockScreenSettingsFragment extends Fragment {
             super.onCreate(savedInstanceState);
 
             addPreferencesFromResource(R.xml.fragment_lockscreen_settings);
-            mResolver = getActivity().getContentResolver();
+
             PreferenceScreen prefSet = getPreferenceScreen();
+            ContentResolver resolver = getActivity().getContentResolver();
 
             // Fingerprint vibration
             mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
@@ -85,9 +86,6 @@ public class LockScreenSettingsFragment extends Fragment {
             if (!mFingerprintManager.isHardwareDetected()){
                 prefSet.removePreference(mFingerprintVib);
             }
-
-            PreferenceScreen prefSet = getPreferenceScreen();
-            ContentResolver resolver = getActivity().getContentResolver();
 
             // Keyguard Torch
             mKeyguardTorch = (SwitchPreference) prefSet.findPreference(PREF_KEYGUARD_TORCH);
