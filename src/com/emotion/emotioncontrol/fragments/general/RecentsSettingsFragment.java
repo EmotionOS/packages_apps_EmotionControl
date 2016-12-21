@@ -80,7 +80,10 @@ public class RecentsSettingsFragment extends Fragment {
         }
 
         private static final String IMMERSIVE_RECENTS = "immersive_recents";
+        private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
         private ListPreference mImmersiveRecents;
+        private SwitchPreference mRecentsClearAll;
+        private ListPreference mRecentsClearAllLocation;
 
 	private static final String TAG = "OmniSwitch";
 
@@ -116,11 +119,19 @@ public class RecentsSettingsFragment extends Fragment {
             PackageManager pm = getActivity().getPackageManager();	    
             final Resources res = getResources();
 
-            mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
+            mImmersiveRecents = (ListPreference) prefSet.findPreference(IMMERSIVE_RECENTS);
             mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
                     resolver, Settings.System.IMMERSIVE_RECENTS, 0)));
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
     		mImmersiveRecents.setOnPreferenceChangeListener(this);
+
+            // Clear all location
+            mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
+            int location = Settings.System.getIntForUser(resolver,
+                    Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3, UserHandle.USER_CURRENT);
+            mRecentsClearAllLocation.setValue(String.valueOf(location));
+            mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
+            mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
 
             mRecentsUseOmniSwitch = (SwitchPreference)
                     findPreference(RECENTS_USE_OMNISWITCH);
@@ -161,6 +172,13 @@ public class RecentsSettingsFragment extends Fragment {
                         Integer.valueOf((String) newValue));
                 mImmersiveRecents.setValue(String.valueOf(newValue));
                 mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+                return true;
+	   } else if (preference == mRecentsClearAllLocation) {
+                int location = Integer.valueOf((String) newValue);
+                int index = mRecentsClearAllLocation.findIndexOfValue((String) newValue);
+                Settings.System.putIntForUser(resolver,
+                        Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
+                mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
                 return true;
            } else if (preference == mRecentsUseOmniSwitch) {
                 boolean value = (Boolean) newValue;

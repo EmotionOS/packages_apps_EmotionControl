@@ -27,7 +27,21 @@
            android:summary="@string/systemui_recents_mem_display_summary"
            android:defaultValue="false" />
 
-   <ListPreference
+    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+            android:key="show_clear_all_recents"
+            android:title="@string/show_clear_all_recents_button_title"
+            android:summary="@string/show_clear_all_recents_button_summary"
+            android:defaultValue="true" />
+
+    <ListPreference
+            android:key="recents_clear_all_location"
+            android:title="@string/recents_clear_all_location_title"
+            android:entries="@array/recents_clear_all_location_entries"
+            android:entryValues="@array/recents_clear_all_location_values"
+            android:defaultValue="3"
+            android:dependency="show_clear_all_recents" />
+
+    <ListPreference
            android:key="immersive_recents"
            android:title="@string/immersive_recents_title"
            android:summary="@string/immersive_recents_summary"
@@ -36,22 +50,22 @@
            android:entryValues="@array/immersive_recents_values"
            android:persistent="false" />
 
-   <PreferenceCategory
+    <PreferenceCategory
            android:key="omniswitch_category"
            android:title="@string/omniswitch_category_title" >
 
-   <SwitchPreference
+    <SwitchPreference
            android:key="recents_use_omniswitch"
            android:title="@string/recents_use_omniswitch_title"
            android:summary="@string/recents_use_omniswitch_summary"
            android:persistent="false" />
 
-   <Preference
+    <Preference
            android:key="omniswitch_start_settings"
            android:title="@string/omniswitch_start_settings_title"
            android:summary="@string/omniswitch_start_settings_summary"
            android:persistent="false" />
 
-   </PreferenceCategory>
+    </PreferenceCategory>
 
 </PreferenceScreen>
