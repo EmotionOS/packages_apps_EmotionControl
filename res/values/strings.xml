@@ -652,6 +652,34 @@
     <string name="show_fourg_title">Show 4G instead of LTE</string>
     <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G</string>
 
+    <!-- Statusbar clock font style -->
+    <string name="clock_font_style_title">Font</string>
+    <string name="clock_font_normal">Normal</string>
+    <string name="clock_font_italic">Italic</string>
+    <string name="clock_font_bold">Bold</string>
+    <string name="clock_font_bold_italic">Bold Italic</string>
+    <string name="clock_font_light">Light</string>
+    <string name="clock_font_light_italic">Light Italic</string>
+    <string name="clock_font_thin">Thin</string>
+    <string name="clock_font_thin_italic">Thin Italic</string>
+    <string name="clock_font_condensed">Condensed</string>
+    <string name="clock_font_condensed_italic">Condensed Italic</string>
+    <string name="clock_font_condensed_light">Condensed Light</string>
+    <string name="clock_font_condensed_light_italic">Condensed Light Italic</string>
+    <string name="clock_font_condensed_bold">Condensed Bold</string>
+    <string name="clock_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="clock_font_medium">Medium</string>
+    <string name="clock_font_medium_italic">Medium Italic</string>
+    <string name="clock_font_black">Black</string>
+    <string name="clock_font_black_italic">Black Italic</string>
+    <string name="clock_font_dancingscript">DancingScript</string>
+    <string name="clock_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="clock_font_comingsoon">ComingSoon</string>
+    <string name="clock_font_notoserif">NotoSerif Normal</string>
+    <string name="clock_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="clock_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="clock_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+
     <!-- StatusBar Cat ends -->
 
     <!-- UI Interface Cat starts -->

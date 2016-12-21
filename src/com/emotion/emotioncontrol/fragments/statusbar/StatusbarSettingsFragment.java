@@ -96,6 +96,7 @@ public class StatusbarSettingsFragment extends Fragment {
         private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
         private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
         private static final String PREF_CLOCK_DATE_POSITION = "clock_date_position";
+        private static final String STATUS_BAR_CLOCK_FONT_STYLE = "font_style";
 
         public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
         public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
@@ -116,6 +117,7 @@ public class StatusbarSettingsFragment extends Fragment {
         private ListPreference mStatusBarBattery;
         private ListPreference mStatusBarBatteryShowPercent;
         private ListPreference mQuickPulldown;
+        private ListPreference mFontStyle;
 
         private SwitchPreference mShowFourG;
 
@@ -150,6 +152,12 @@ public class StatusbarSettingsFragment extends Fragment {
             mStatusBarDateStyle.setSummary(mStatusBarDateStyle.getEntry());
             mStatusBarDateStyle.setOnPreferenceChangeListener(this);
 
+            int fontStyle = Settings.System.getInt(resolver,
+                   Settings.System.STATUSBAR_CLOCK_FONT_STYLE, 0);
+            mFontStyle.setValue(String.valueOf(fontStyle));
+            mFontStyle.setSummary(mFontStyle.getEntry());
+            mFontStyle.setOnPreferenceChangeListener(this);
+
             mStatusBarDateFormat.setOnPreferenceChangeListener(this);
             mStatusBarDateFormat.setSummary(mStatusBarDateFormat.getEntry());
             if (mStatusBarDateFormat.getValue() == null) {
@@ -164,6 +172,7 @@ public class StatusbarSettingsFragment extends Fragment {
             mStatusBarBatteryShowPercent = (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
 
             mQuickPulldown = (ListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
+            mFontStyle = (ListPreference) findPreference(STATUS_BAR_CLOCK_FONT_STYLE);
 
             int quickPulldown = CMSettings.System.getInt(resolver,
                     CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
@@ -295,6 +304,13 @@ public class StatusbarSettingsFragment extends Fragment {
                 Settings.System.putInt(
                         resolver, STATUS_BAR_DATE_STYLE, statusBarDateStyle);
                 mStatusBarDateStyle.setSummary(mStatusBarDateStyle.getEntries()[index]);
+                return true;
+            } else if (preference == mFontStyle) {
+               int clockFontStyle = Integer.parseInt((String) newValue);
+               int index = mFontStyle.findIndexOfValue((String) newValue);
+               Settings.System.putInt(
+                       getActivity().getContentResolver(), Settings.System.STATUSBAR_CLOCK_FONT_STYLE, clockFontStyle);
+               mFontStyle.setSummary(mFontStyle.getEntries()[index]);
                 return true;
             } else if (preference ==  mStatusBarDateFormat) {
                 int index = mStatusBarDateFormat.findIndexOfValue((String) newValue);
