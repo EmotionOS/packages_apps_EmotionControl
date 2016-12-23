@@ -44,7 +44,7 @@
         android:key="screenshot_type"
         android:title="@string/screenshot_type_title" />
 
-    <com.emotion.emotioncontrol.widget.NumberPickerPreference
+    <com.emotion.emotioncontrol.widgets.NumberPickerPreference
         android:key="screenshot_delay"
         android:title="@string/powermenu_screenshot_delay_title" />
 
