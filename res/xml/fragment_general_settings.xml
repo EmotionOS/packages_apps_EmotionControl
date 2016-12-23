@@ -47,6 +47,12 @@
     <com.emotion.emotioncontrol.widget.NumberPickerPreference
         android:key="screenshot_delay"
         android:title="@string/powermenu_screenshot_delay_title" />
+
+    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+        android:key="three_finger_gesture"
+        android:title="@string/three_finger_gesture"
+        android:summary="@string/three_finger_gesture_summary"
+        android:defaultValue="false" />
     </PreferenceCategory>
 
     <!-- Hostname settings -->

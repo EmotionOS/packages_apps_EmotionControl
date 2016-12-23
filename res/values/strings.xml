@@ -233,6 +233,10 @@
     <string name="powermenu_screenshot_delay_title">Screenshot delay</string>
     <string name="powermenu_screenshot_delay_message">Delay currently set to %1$s seconds</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
     <!-- Hostname setting -->
     <string name="device_hostname_title_cat">Hostname setting</string>
     <string name="device_hostname">Device hostname</string>
