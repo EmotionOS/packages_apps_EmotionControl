@@ -40,13 +40,13 @@
     </string-array>
     <string-array name="navigation_drawer_icons" translatable="false">
         <item>@drawable/ic_emotion_control_general</item>
-        <item>@drawable/ic_rom_control_ribbon</item>
-        <item>@drawable/ic_rom_control_lockscreens</item>
-        <item>@drawable/ic_rom_control_toggles</item>
-        <item>@drawable/ic_rom_control_power_menu</item>
-        <item>@drawable/ic_rom_control_sound</item>
-        <item>@drawable/ic_rom_control_signal</item>
-        <item>@drawable/ic_rom_control_animations</item>
+        <item>@drawable/ic_emotion_control_gestures</item>
+        <item>@drawable/ic_emotion_control_lockscreens</item>
+        <item>@drawable/ic_emotion_control_notifications</item>
+        <item>@drawable/ic_emotion_control_powermenu</item>
+        <item>@drawable/ic_emotion_control_sound</item>
+        <item>@drawable/ic_emotion_control_statusbar</item>
+        <item>@drawable/ic_emotion_control_interface</item>
     </string-array>
 
     <string-array name="power_menu_actions_array" translatable="false">
