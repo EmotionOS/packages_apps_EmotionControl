@@ -993,7 +993,7 @@
     <string name="blurred_recent_app_enabled_pref">Blurred Recents apps background </string>
     <string name="blurred_recent_app_enabled_pref_summary">Blur the background of recents apps</string>
     <string name="blurred_scale">Blur Scale</string>
-    <string name="blurred_scale_summary">Quailty of blur image</string>
+    <string name="blurred_scale_summary">Quality of blur image</string>
     <string name="blurred_radius">Blur Radius</string>
     <string name="blurred_radius_summary">Amount of blur</string>
     <string name="blur_cat_notice">Notice</string>
