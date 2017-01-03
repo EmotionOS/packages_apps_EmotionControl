@@ -63,6 +63,7 @@ public class LockScreenSettingsFragment extends Fragment {
         }
 
         private static final String PREF_KEYGUARD_TORCH = "keyguard_toggle_torch";
+        private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
 
         private SwitchPreference mKeyguardTorch;
 
@@ -70,6 +71,7 @@ public class LockScreenSettingsFragment extends Fragment {
 
         private FingerprintManager mFingerprintManager;
         private SwitchPreference mFingerprintVib;
+        private SeekBarPreferenceCham mMaxKeyguardNotifConfig;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -89,11 +91,23 @@ public class LockScreenSettingsFragment extends Fragment {
 
             // Keyguard Torch
             mKeyguardTorch = (SwitchPreference) prefSet.findPreference(PREF_KEYGUARD_TORCH);
+
+            mMaxKeyguardNotifConfig = (SeekBarPreferenceCham) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
+            int kgconf = Settings.System.getInt(mResolver,
+                    Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, 5);
+            mMaxKeyguardNotifConfig.setValue(kgconf);
+            mMaxKeyguardNotifConfig.setOnPreferenceChangeListener(this);
         }
 
         @Override
         public boolean onPreferenceChange(Preference preference, Object newValue) {
             ContentResolver resolver = getActivity().getContentResolver();
+            if (preference == mMaxKeyguardNotifConfig) {
+                int kgconf = (Integer) newValue;
+                Settings.System.putInt(getActivity().getContentResolver(),
+                        Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, kgconf);
+                return true;
+            }
             return false;
         }
 
