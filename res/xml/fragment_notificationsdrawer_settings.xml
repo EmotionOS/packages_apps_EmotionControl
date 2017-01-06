@@ -42,6 +42,36 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="header_cat"
+        android:title="@string/header_title_cat">
+
+    <com.emotion.control.settings.SystemSettingSwitchPreference
+        android:key="status_bar_custom_header"
+        android:title="@string/status_bar_custom_header_title"
+        android:summary="@string/status_bar_custom_header_summary"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="daylight_header_pack"
+        android:title="@string/daylight_header_pack_title"
+        android:persistent="false"
+        android:dependency="status_bar_custom_header" />
+
+    <com.emotion.control.widgets.SeekBarPreferenceCham
+        android:key="status_bar_custom_header_shadow"
+        android:title="@string/status_bar_custom_header_shadow_title"
+        android:summary="@string/status_bar_custom_header_shadow_summary"
+        android:max="100"
+        emotion:min="0"
+        emotion:unitsLeft=""
+        emotion:unitsRight="@string/unit_percent"
+        emotion:defaultVal="0"
+        android:persistent="false"
+        android:dependency="status_bar_custom_header" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="tiles_cat"
         android:title="@string/tiles_title_cat" >
 
