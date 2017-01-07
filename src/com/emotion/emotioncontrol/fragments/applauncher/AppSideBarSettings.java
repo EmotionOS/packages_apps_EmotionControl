@@ -117,8 +117,8 @@ public class AppSideBarSettings extends Fragment {
             mTriggerBottomPref.setOnPreferenceChangeListener(this);
 
             mHideTimeoutPref = (SeekBarPreferenceCham) findPreference(KEY_HIDE_TIMEOUT);
-            mHideTimeoutPref.setValue(Settings.System.getInt(resolver,
-                Settings.System.APP_SIDEBAR_HIDE_TIMEOUT, 3000));
+            mHideTimeoutPref.setValue(Settings.System.getInt(getActivity().getContentResolver(),
+                    Settings.System.APP_SIDEBAR_HIDE_TIMEOUT, 3000));
             mHideTimeoutPref.setOnPreferenceChangeListener(this);
 
             findPreference(KEY_SETUP_ITEMS).setOnPreferenceClickListener(this);
@@ -158,8 +158,8 @@ public class AppSideBarSettings extends Fragment {
                 return true;
             } else if (preference == mHideTimeoutPref) {
                 int timeout = ((Integer)newValue).intValue();
-                Settings.System.putInt(resolver,
-                    Settings.System.APP_SIDEBAR_HIDE_TIMEOUT, timeout);
+                Settings.System.putInt(getActivity().getContentResolver(),
+                        Settings.System.APP_SIDEBAR_HIDE_TIMEOUT, timeout);
                 return true;
             }
             return false;
