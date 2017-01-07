@@ -141,6 +141,9 @@ public class StatusbarSettingsFragment extends Fragment {
             mStatusBarDate = (ListPreference) findPreference(STATUS_BAR_DATE);
             mStatusBarDateStyle = (ListPreference) findPreference(STATUS_BAR_DATE_STYLE);
             mStatusBarDateFormat = (ListPreference) findPreference(STATUS_BAR_DATE_FORMAT);
+            mQuickPulldown = (ListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
+            mFontStyle = (ListPreference) findPreference(STATUS_BAR_CLOCK_FONT_STYLE);
+            mStatusBarClockFontSize = (ListPreference) findPreference(STATUS_BAR_CLOCK_FONT_SIZE);
 
             int showDate = Settings.System.getInt(resolver,
                     Settings.System.STATUS_BAR_DATE, 0);
@@ -178,10 +181,6 @@ public class StatusbarSettingsFragment extends Fragment {
             mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
             mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
             mStatusBarBatteryShowPercent = (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
-
-            mQuickPulldown = (ListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
-            mFontStyle = (ListPreference) findPreference(STATUS_BAR_CLOCK_FONT_STYLE);
-            mStatusBarClockFontSize = (ListPreference) findPreference(STATUS_BAR_CLOCK_FONT_SIZE);
 
             int quickPulldown = CMSettings.System.getInt(resolver,
                     CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
