@@ -100,9 +100,9 @@
         android:key="lockscreen_max_notif_cofig"
         android:title="@string/lockscreen_maxnotif_config"
         android:max="8"
-        aokp:minimum="3"
-        aokp:unitsLeft=""
-        aokp:unitsRight=""
+        emotion:minimum="3"
+        emotion:unitsLeft=""
+        emotion:unitsRight=""
         android:persistent="false"
         android:dependency="lock_screen_custom_notif" />
 

@@ -348,23 +348,6 @@ public class StatusbarSettingsFragment extends Fragment {
                 mClockDatePosition.setSummary(mClockDatePosition.getEntries()[index]);
                 parseClockDateFormats();
                  return true;
-            } else if (preference == mAokpLogoColor) {
-                String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(newValue)));
-                preference.setSummary(hex);
-                int intHex = ColorPickerPreference.convertToColorInt(hex);
-                Settings.System.putInt(resolver,
-                    Settings.System.STATUS_BAR_AOKP_LOGO_COLOR, intHex);
-                return true;
-            } else if (preference == mAokpLogoStyle) {
-                int AokpLogoStyle = Integer.valueOf((String) newValue);
-                int index = mAokpLogoStyle.findIndexOfValue((String) newValue);
-                Settings.System.putIntForUser(
-                        resolver, Settings.System.STATUS_BAR_AOKP_LOGO_STYLE, AokpLogoStyle,
-                        UserHandle.USER_CURRENT);
-                mAokpLogoStyle.setSummary(
-                        mAokpLogoStyle.getEntries()[index]);
-                return true;
             }
             return false;
         }

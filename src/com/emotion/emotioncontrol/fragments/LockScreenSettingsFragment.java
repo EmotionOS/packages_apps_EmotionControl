@@ -65,6 +65,8 @@ public class LockScreenSettingsFragment extends Fragment {
         private static final String PREF_KEYGUARD_TORCH = "keyguard_toggle_torch";
         private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
 
+        private ContentResolver mResolver;
+
         private SwitchPreference mKeyguardTorch;
 
         static final int DEFAULT = 0xffffffff;
@@ -78,7 +80,7 @@ public class LockScreenSettingsFragment extends Fragment {
             super.onCreate(savedInstanceState);
 
             addPreferencesFromResource(R.xml.fragment_lockscreen_settings);
-
+            mResolver = getActivity().getContentResolver();
             PreferenceScreen prefSet = getPreferenceScreen();
             ContentResolver resolver = getActivity().getContentResolver();
 
