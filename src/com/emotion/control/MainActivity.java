@@ -38,6 +38,7 @@ import com.emotion.control.fragments.general.HostnamePreference;
 import com.emotion.control.fragments.general.WakelockBlockerFragment;
 
 import com.emotion.control.fragments.LockScreenSettingsFragment;
+import com.emotion.control.fragments.ButtonSettingsFragment;
 import com.emotion.control.fragments.PowerMenuSettingsFragment;
 
 import com.emotion.control.fragments.sound.SoundTabHostFragment;
@@ -128,22 +129,26 @@ public class MainActivity extends Activity
                 break;
 
             case 3:
-                fragment = new NotificationsDrawerFragment();
+                fragment = new ButtonSettingsFragment();
                 break;
 
             case 4:
-                fragment = new PowerMenuSettingsFragment();
+                fragment = new NotificationsDrawerFragment();
                 break;
 
             case 5:
-                fragment = new SoundTabHostFragment();
+                fragment = new PowerMenuSettingsFragment();
                 break;
 
             case 6:
-                fragment = new StatusBarTabHostFragment();
+                fragment = new SoundTabHostFragment();
                 break;
 
             case 7:
+                fragment = new StatusBarTabHostFragment();
+                break;
+
+            case 8:
                 fragment = new UITabHostFragment();
                 break;
         }

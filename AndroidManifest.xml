@@ -85,6 +85,7 @@
         <activity android:name="com.emotion.control.fragments.applauncher.GestureAnywhereSettings" />
         <activity android:name="com.emotion.control.fragments.applauncher.GestureAnywhereBuilderActivity" />
         <activity android:name="com.emotion.control.fragments.applauncher.GestureAnywhereCreateGestureActivity" />
+	<activity android:name="com.emotion.control.fragments.ButtonSettingsFragment" />
         <activity android:name=".romstats.AnonymousStats"
             android:label="@string/stats_title" >
             <intent-filter>
