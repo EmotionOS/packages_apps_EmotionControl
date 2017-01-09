@@ -17,7 +17,7 @@
 <PreferenceScreen
     android:title="@string/network_traffic_title"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:emotion="http://schemas.android.com/apk/com.emotion.emotioncontrol">
+    xmlns:emotion="http://schemas.android.com/apk/com.emotion.control">
 
     <ListPreference
         android:key="network_traffic_state"
@@ -56,7 +56,7 @@
         android:dependency="network_traffic_state"
         android:defaultValue="false" />
 
-    <com.emotion.emotioncontrol.widgets.SeekBarPreferenceCham
+    <com.emotion.control.widgets.SeekBarPreferenceCham
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold"
         android:max="100"

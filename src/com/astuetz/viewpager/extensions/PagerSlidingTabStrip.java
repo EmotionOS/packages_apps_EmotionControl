@@ -20,7 +20,7 @@ package com.astuetz.viewpager.extensions;
 
 import java.util.Locale;
 
-import com.emotion.emotioncontrol.R;
+import com.emotion.control.R;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

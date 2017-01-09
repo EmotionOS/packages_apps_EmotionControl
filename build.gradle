@@ -22,7 +22,7 @@ android {
     buildToolsVersion "23.0.1"
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId 'co.emotion.emotioncontrol'
+        applicationId 'co.emotion.control'
         minSdkVersion 19
         targetSdkVersion 23
         versionCode 1

@@ -19,16 +19,16 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/notifications_drawer_settings"
-    xmlns:emotion="http://schemas.android.com/apk/res/com.emotion.emotioncontrol" >
+    xmlns:emotion="http://schemas.android.com/apk/res/com.emotion.control" >
 
-    <com.emotion.emotioncontrol.settings.SecureSettingSwitchPreference
+    <com.emotion.control.settings.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_brightness_slider_title"
         android:summaryOn="@string/qs_brightness_slider_enabled"
         android:summaryOff="@string/qs_brightness_slider_disabled"
         android:defaultValue="true" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="brightness_icon"
         android:title="@string/brightness_icon_title"
         android:summary="@string/brightness_icon_summary"
@@ -80,37 +80,37 @@
         android:entries="@array/sysui_qqs_count_entries"
         android:entryValues="@array/sysui_qqs_count_values" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="quick_settings_vibrate"
         android:title="@string/quick_settings_vibrate_title"
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false"/>
 
-    <com.emotion.emotioncontrol.settings.SecureSettingSwitchPreference
+    <com.emotion.control.settings.SecureSettingSwitchPreference
         android:key="qs_data_advanced"
         android:title="@string/qs_advanced_data_title"
         android:summary="@string/qs_advanced_data_summary"
         android:defaultValue="false" />
 
-    <com.emotion.emotioncontrol.settings.SecureSettingSwitchPreference
+    <com.emotion.control.settings.SecureSettingSwitchPreference
         android:key="qs_wifi_easy_toggle"
         android:title="@string/qs_wifi_easy_toggle_title"
         android:summary="@string/qs_wifi_easy_toggle_summary"
         android:defaultValue="false" />
 
-    <com.emotion.emotioncontrol.settings.SecureSettingSwitchPreference
+    <com.emotion.control.settings.SecureSettingSwitchPreference
         android:key="qs_bt_easy_toggle"
         android:title="@string/qs_bt_easy_toggle_title"
         android:summary="@string/qs_bt_easy_toggle_summary"
         android:defaultValue="false" />
 
-    <com.emotion.emotioncontrol.settings.SecureSettingSwitchPreference
+    <com.emotion.control.settings.SecureSettingSwitchPreference
         android:key="qs_battery_easy_toggle"
         android:title="@string/qs_battery_easy_toggle_title"
         android:summary="@string/qs_battery_easy_toggle_summary"
         android:defaultValue="false" />
 
-    <com.emotion.emotioncontrol.settings.SecureSettingSwitchPreference
+    <com.emotion.control.settings.SecureSettingSwitchPreference
         android:key="qs_fancy_animation"
         android:title="@string/qs_fancy_animation_title"
         android:summary="@string/qs_fancy_animation_summary"

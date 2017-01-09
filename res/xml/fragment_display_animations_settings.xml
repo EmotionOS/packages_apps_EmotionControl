@@ -41,7 +41,7 @@
         android:entries="@array/entries_scrollingcache"
         android:entryValues="@array/values_scrollingcache" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="disable_transition_animations"
         android:title="@string/disable_animations"
         android:summary="@string/disable_animations_summary"
@@ -54,18 +54,18 @@
         android:entryValues="@array/toast_animation_values"
         android:persistent="false" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
         android:summary="@string/toast_icon_summary"
         android:defaultValue="true" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="force_expanded_notifications"
         android:title="@string/force_expanded_notifications_title"
         android:summary="@string/force_expanded_notifications_summary" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="disable_immersive_message"
         android:title="@string/disable_immersive_message_title"
         android:summary="@string/disable_immersive_message_summary"

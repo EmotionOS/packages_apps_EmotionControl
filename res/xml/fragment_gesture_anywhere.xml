@@ -15,7 +15,7 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:emotion="http://schemas.android.com/apk/com.emotion.emotioncontrol"
+    xmlns:emotion="http://schemas.android.com/apk/com.emotion.control"
     android:title="@string/gesture_anywhere_title" >
 
     <SwitchPreference
@@ -42,7 +42,7 @@
     <PreferenceCategory
         android:title="@string/trigger_category" />
 
-    <com.emotion.emotioncontrol.widgets.SeekBarPreferenceCham
+    <com.emotion.control.widgets.SeekBarPreferenceCham
         android:key="gesture_anywhere_trigger_width"
         android:title="@string/trigger_width_title"
         android:summary="@string/trigger_width_summary"
@@ -53,7 +53,7 @@
         emotion:unitsRight="px"
         android:dependency="gesture_anywhere_enabled" />
 
-    <com.emotion.emotioncontrol.widgets.SeekBarPreferenceCham
+    <com.emotion.control.widgets.SeekBarPreferenceCham
         android:key="gesture_anywhere_trigger_top"
         android:title="@string/trigger_top_title"
         android:summary="@string/trigger_top_summary"
@@ -64,7 +64,7 @@
         emotion:unitsRight="%"
         android:dependency="gesture_anywhere_enabled" />
 
-    <com.emotion.emotioncontrol.widgets.SeekBarPreferenceCham
+    <com.emotion.control.widgets.SeekBarPreferenceCham
         android:key="gesture_anywhere_trigger_bottom"
         android:title="@string/trigger_bottom_title"
         android:summary="@string/trigger_bottom_summary"

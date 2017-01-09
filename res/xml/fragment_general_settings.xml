@@ -44,11 +44,11 @@
         android:key="screenshot_type"
         android:title="@string/screenshot_type_title" />
 
-    <com.emotion.emotioncontrol.widgets.NumberPickerPreference
+    <com.emotion.control.widgets.NumberPickerPreference
         android:key="screenshot_delay"
         android:title="@string/powermenu_screenshot_delay_title" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
         android:title="@string/three_finger_gesture"
         android:summary="@string/three_finger_gesture_summary"
@@ -60,7 +60,7 @@
         android:key="device_hostname_cat"
         android:title="@string/device_hostname_title_cat" >
 
-    <com.emotion.emotioncontrol.fragments.general.HostnamePreference
+    <com.emotion.control.fragments.general.HostnamePreference
         android:key="device_hostname"
         android:title="@string/device_hostname"
         android:dialogTitle="@string/device_hostname"

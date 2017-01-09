@@ -19,15 +19,15 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/recents_settings"
-    xmlns:emotion="http://schemas.android.com/apk/com.emotion.emotioncontrol" >
+    xmlns:emotion="http://schemas.android.com/apk/com.emotion.control" >
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
     	   android:key="systemui_recents_mem_display"
            android:title="@string/systemui_recents_mem_display_title"
            android:summary="@string/systemui_recents_mem_display_summary"
            android:defaultValue="false" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
             android:key="show_clear_all_recents"
             android:title="@string/show_clear_all_recents_button_title"
             android:summary="@string/show_clear_all_recents_button_summary"

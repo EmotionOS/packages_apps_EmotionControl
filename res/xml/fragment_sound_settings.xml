@@ -19,7 +19,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:emotion="http://schemas.android.com/apk/res/com.emotion.emotioncontrol"
+    xmlns:emotion="http://schemas.android.com/apk/res/com.emotion.control"
     android:title="@string/sound_settings">
 
     <SwitchPreference
@@ -29,7 +29,7 @@
         android:defaultValue="true" />
 
     <!-- Screenshot tone -->
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="screenshot_sound"
         android:title="@string/screenshot_sound_title"
         android:summary="@string/screenshot_sound_summary"
@@ -43,7 +43,7 @@
         android:defaultValue="true" />
 
         <!-- Headset -->
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="headset_connect_player"
         android:title="@string/headset_connect_player_title"
         android:summary="@string/headset_connect_player_summary"

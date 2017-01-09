@@ -17,19 +17,19 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/lockscreen_settings_title"
-    xmlns:emotion="http://schemas.android.com/apk/com.emotion.emotioncontrol" >
+    xmlns:emotion="http://schemas.android.com/apk/com.emotion.control" >
 
     <PreferenceCategory
         android:key="lockscreen_general_settings"
         android:title="@string/general_settings">
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="false" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="keyguard_toggle_torch"
         android:title="@string/keyguard_torch_title"
         android:summary="@string/keyguard_torch_summary"
@@ -37,66 +37,66 @@
 
     </PreferenceCategory>
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="lockscreen_media_metadata"
         android:title="@string/media_art_title"
         android:summary="@string/media_art_summary"
         android:defaultValue="true" />
 
-    <com.emotion.emotioncontrol.settings.CMSecureSettingSwitchPreference
+    <com.emotion.control.settings.CMSecureSettingSwitchPreference
         android:key="lockscreen_visualizer"
         android:title="@string/lockscreen_visualizer_title"
         android:defaultValue="true"/>
 
-    <com.emotion.emotioncontrol.settings.CMSecureSettingSwitchPreference
+    <com.emotion.control.settings.CMSecureSettingSwitchPreference
         android:key="lock_screen_weather_enabled"
         android:title="@string/lockscreen_weather_enabled_title"
         android:defaultValue="false"/>
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="fingerprint_success_vib"
         android:title="@string/fprint_sucess_vib_title"
         android:summary="@string/fprint_sucess_vib_summary"
         android:defaultValue="true" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="double_tap_sleep_anywhere"
         android:title="@string/double_tap_sleep_anywhere_title"
         android:summary="@string/double_tap_sleep_anywhere_summary" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="lockscreen_quick_unlock_control"
         android:title="@string/unlock_quick_unlock_control_title"
         android:summary="@string/unlock_quick_unlock_control_summary" />
 
-    <com.emotion.emotioncontrol.settings.SecureSettingSwitchPreference
+    <com.emotion.control.settings.SecureSettingSwitchPreference
         android:key="status_bar_locked_on_secure_keyguard"
         android:title="@string/block_on_secure_keyguard_title"
         android:summary="@string/block_on_secure_keyguard_summary"
         android:defaultValue="false"/>
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="hide_lockscreen_clock"
         android:title="@string/hide_lockscreen_clock_title"
         android:defaultValue="true" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="hide_lockscreen_date"
         android:title="@string/hide_lockscreen_date_title"
         android:defaultValue="true" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="keyguard_show_clock"
         android:title="@string/keyguard_statusbar_clock_title"
         android:summary="@string/keyguard_statusbar_clock_summary" />
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="lock_screen_custom_notif"
         android:title="@string/lockscreen_maxnotif_title"
         android:summary="@string/lockscreen_maxnotif_sumary"
         android:defaultValue="false" />
 
-    <com.emotion.emotioncontrol.widgets.SeekBarPreferenceCham
+    <com.emotion.control.widgets.SeekBarPreferenceCham
         android:key="lockscreen_max_notif_cofig"
         android:title="@string/lockscreen_maxnotif_config"
         android:max="8"

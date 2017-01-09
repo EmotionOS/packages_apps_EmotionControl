@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.emotion.emotioncontrol"
+          package="com.emotion.control"
           android:sharedUserId="android.uid.system"
           android:versionCode="1"
           android:versionName="1.0">
@@ -46,12 +46,12 @@
             android:theme="@style/AppTheme"
             android:hardwareAccelerated="true" >
         <activity
-                android:name="com.emotion.emotioncontrol.MainActivity"
+                android:name="com.emotion.control.MainActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:label="@string/emotion_control" />
 
         <activity
-                android:name="com.emotion.emotioncontrol.LauncherActivity"
+                android:name="com.emotion.control.LauncherActivity"
                 android:label="@string/emotion_control">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -60,31 +60,31 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.emotion.emotioncontrol.fragments.NavigationDrawerFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.NotificationsDrawerFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.general.GeneralTabHostFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.general.GeneralSettingsFragment" />
-	<activity android:name="com.emotion.emotioncontrol.fragments.sound.SoundTabHostFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.sound.SoundSettingsFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.sound.LiveVolumeFragment" />
-	<activity android:name="com.emotion.emotioncontrol.fragments.statusbar.StatusBarTabHostFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.statusbar.StatusbarSettingsFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.general.HostnamePreference" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.general.WakelockBlockerFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.ui.UITabHostFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.ui.AnimBarPreference" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.ui.AnimationControls" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.ui.DisplayAnimationsSettings" />
-	<activity android:name="com.emotion.emotioncontrol.fragments.ui.TransparencyPornFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.LockScreenSettingsFragment" />
-	<activity android:name="com.emotion.emotioncontrol.fragments.PowerMenuSettingsFragment" />
-	<activity android:name="com.emotion.emotioncontrol.fragments.general.RecentsSettingsFragment" />
-	<activity android:name="com.emotion.emotioncontrol.fragments.applauncher.AppLauncherTabHostFragment" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.AppCircleBarSettings" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.AppSideBarSettings" />	
-        <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.GestureAnywhereSettings" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.GestureAnywhereBuilderActivity" />
-        <activity android:name="com.emotion.emotioncontrol.fragments.applauncher.GestureAnywhereCreateGestureActivity" />
+        <activity android:name="com.emotion.control.fragments.NavigationDrawerFragment" />
+        <activity android:name="com.emotion.control.fragments.NotificationsDrawerFragment" />
+        <activity android:name="com.emotion.control.fragments.general.GeneralTabHostFragment" />
+        <activity android:name="com.emotion.control.fragments.general.GeneralSettingsFragment" />
+	<activity android:name="com.emotion.control.fragments.sound.SoundTabHostFragment" />
+        <activity android:name="com.emotion.control.fragments.sound.SoundSettingsFragment" />
+        <activity android:name="com.emotion.control.fragments.sound.LiveVolumeFragment" />
+	<activity android:name="com.emotion.control.fragments.statusbar.StatusBarTabHostFragment" />
+        <activity android:name="com.emotion.control.fragments.statusbar.StatusbarSettingsFragment" />
+        <activity android:name="com.emotion.control.fragments.general.HostnamePreference" />
+        <activity android:name="com.emotion.control.fragments.general.WakelockBlockerFragment" />
+        <activity android:name="com.emotion.control.fragments.ui.UITabHostFragment" />
+        <activity android:name="com.emotion.control.fragments.ui.AnimBarPreference" />
+        <activity android:name="com.emotion.control.fragments.ui.AnimationControls" />
+        <activity android:name="com.emotion.control.fragments.ui.DisplayAnimationsSettings" />
+	<activity android:name="com.emotion.control.fragments.ui.TransparencyPornFragment" />
+        <activity android:name="com.emotion.control.fragments.LockScreenSettingsFragment" />
+	<activity android:name="com.emotion.control.fragments.PowerMenuSettingsFragment" />
+	<activity android:name="com.emotion.control.fragments.general.RecentsSettingsFragment" />
+	<activity android:name="com.emotion.control.fragments.applauncher.AppLauncherTabHostFragment" />
+        <activity android:name="com.emotion.control.fragments.applauncher.AppCircleBarSettings" />
+        <activity android:name="com.emotion.control.fragments.applauncher.AppSideBarSettings" />	
+        <activity android:name="com.emotion.control.fragments.applauncher.GestureAnywhereSettings" />
+        <activity android:name="com.emotion.control.fragments.applauncher.GestureAnywhereBuilderActivity" />
+        <activity android:name="com.emotion.control.fragments.applauncher.GestureAnywhereCreateGestureActivity" />
         <activity android:name=".romstats.AnonymousStats"
             android:label="@string/stats_title" >
             <intent-filter>

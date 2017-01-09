@@ -35,8 +35,8 @@
         <PreferenceScreen android:title="@string/preview_data_title" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:targetClass="com.emotion.emotioncontrol.romstats.PreviewActivity"
-                android:targetPackage="com.emotion.emotioncontrol" />
+                android:targetClass="com.emotion.control.romstats.PreviewActivity"
+                android:targetPackage="com.emotion.control" />
         </PreferenceScreen>
 
         <Preference

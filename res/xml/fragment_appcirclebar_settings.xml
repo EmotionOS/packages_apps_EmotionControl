@@ -19,22 +19,22 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:emotion="http://schemas.android.com/apk/com.emotion.emotioncontrol"
+    xmlns:emotion="http://schemas.android.com/apk/com.emotion.control"
     android:title="@string/app_circle_bar_title" >
 
-    <com.emotion.emotioncontrol.settings.SystemSettingSwitchPreference
+    <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="enable_app_circle_bar"
         android:title="@string/app_circle_bar_title"
         android:summary="@string/app_circle_bar_summary" />
 
-    <com.emotion.emotioncontrol.settings.AppMultiSelectListPreference
+    <com.emotion.control.settings.AppMultiSelectListPreference
         android:key="app_circle_bar_included_apps"
         android:persistent="false"
         android:title="@string/app_circle_bar_included_apps_title"
         android:summary="@string/app_circle_bar_included_apps_summary"
         android:dependency="enable_app_circle_bar" />
 
-    <com.emotion.emotioncontrol.widgets.SeekBarPreferenceCham
+    <com.emotion.control.widgets.SeekBarPreferenceCham
         android:key="trigger_width"
         android:title="@string/trigger_width_title"
         android:summary="@string/trigger_width_summary"
@@ -45,7 +45,7 @@
         emotion:unitsRight="px"
         android:dependency="enable_app_circle_bar" />
 
-    <com.emotion.emotioncontrol.widgets.SeekBarPreferenceCham
+    <com.emotion.control.widgets.SeekBarPreferenceCham
         android:key="trigger_top"
         android:title="@string/trigger_top_title"
         android:summary="@string/trigger_top_summary"
@@ -56,7 +56,7 @@
         emotion:unitsRight="%"
         android:dependency="enable_app_circle_bar" />
 
-    <com.emotion.emotioncontrol.widgets.SeekBarPreferenceCham
+    <com.emotion.control.widgets.SeekBarPreferenceCham
         android:key="trigger_bottom"
         android:title="@string/trigger_bottom_title"
         android:summary="@string/trigger_bottom_summary"
