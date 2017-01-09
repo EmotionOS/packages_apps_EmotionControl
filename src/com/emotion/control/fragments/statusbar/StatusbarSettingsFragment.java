@@ -90,7 +90,7 @@ public class StatusbarSettingsFragment extends Fragment {
         private static final String STATUS_BAR_DATE_STYLE = "status_bar_date_style";
         private static final String STATUS_BAR_DATE_FORMAT = "status_bar_date_format";
 
-        private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
+        private static final String STATUS_BAR_CLOCK_POSITION = "status_bar_clock";
         private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
         private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
         private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
@@ -177,7 +177,7 @@ public class StatusbarSettingsFragment extends Fragment {
 
             parseClockDateFormats();
 
-            mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
+            mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_POSITION);
             mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
             mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
             mStatusBarBatteryShowPercent = (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
@@ -242,7 +242,7 @@ public class StatusbarSettingsFragment extends Fragment {
             Configuration config = getResources().getConfiguration();
             if (config.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
                     mStatusBarClock.setEntries(getActivity().getResources().getStringArray(
-                            R.array.status_bar_clock_style_entries_rtl));
+                            R.array.status_bar_clock_position_entries_rtl));
                     mStatusBarClock.setSummary(mStatusBarClock.getEntry());
             }
         }
