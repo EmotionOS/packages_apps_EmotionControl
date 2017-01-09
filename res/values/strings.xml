@@ -289,6 +289,12 @@
     <string name="wakelock_blocker_warning_title">Proceed with caution</string>
     <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
 
+    <!-- Settings drawer switch -->
+    <string name="settings_drawer_title_cat">Settings drawer</string>
+    <string name="show_settings_drawer_title">Show settings drawer</string>
+    <string name="show_settings_drawer_enabled">Settings drawer enabled</string>
+    <string name="show_settings_drawer_disabled">Settings drawer disabled</string>
+
     <!-- General Cat ends -->
 
     <!-- Lockscreen Cat starts -->

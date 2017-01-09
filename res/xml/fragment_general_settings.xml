@@ -55,6 +55,18 @@
         android:defaultValue="false" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="settings_drawer_cat"
+        android:title="@string/settings_drawer_title_cat" >
+    <com.emotion.control.settings.SystemSettingSwitchPreference
+        android:key="show_settings_drawer"
+        android:title="@string/show_settings_drawer_title"
+        android:summaryOn="@string/show_settings_drawer_enabled"
+        android:summaryOff="@string/show_settings_drawer_disabled"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
+
     <!-- Hostname settings -->
     <PreferenceCategory
         android:key="device_hostname_cat"
