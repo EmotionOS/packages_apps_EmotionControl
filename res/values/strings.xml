@@ -334,7 +334,7 @@
     <string name="lockscreen_maxnotif_config">Max lockscreen notifications</string>
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
-    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
+    <string name="lockscreen_battery_info_summary">Display realtime charger current, voltage, and battery temperature on lockscreen while charging</string>
 
     <!-- Torch -->
     <string name="keyguard_torch_title">Torch</string>
