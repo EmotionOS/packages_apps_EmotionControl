@@ -53,6 +53,12 @@
         android:title="@string/lockscreen_weather_enabled_title"
         android:defaultValue="false"/>
 
+    <com.emotion.control.settings.CMSecureSettingSwitchPreference
+        android:key="lock_screen_blur_enabled"
+        android:title="@string/lockscreen_blur_enabled_title"
+        android:defaultValue="false"
+        emotion:requiresConfig="@*android:bool/config_uiBlurEnabled" />
+
     <com.emotion.control.settings.SystemSettingSwitchPreference
         android:key="fingerprint_success_vib"
         android:title="@string/fprint_sucess_vib_title"
