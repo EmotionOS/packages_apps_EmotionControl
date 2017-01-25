@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (c) 2016, Emotroid Team
+ * Copyright (c) 2017, Emotroid Team
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Material.Light">
         <item name="android:actionBarStyle">@android:style/Widget.Material.Light.ActionBar.Solid</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/drawer_list_selector</item>
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
