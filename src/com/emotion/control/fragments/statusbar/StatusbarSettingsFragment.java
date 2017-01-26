@@ -94,7 +94,6 @@ public class StatusbarSettingsFragment extends Fragment {
         private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
         private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
         private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-        private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
         private static final String PREF_CLOCK_DATE_POSITION = "clock_date_position";
         private static final String STATUS_BAR_CLOCK_FONT_STYLE = "font_style";
         private static final String STATUS_BAR_CLOCK_FONT_SIZE  = "status_bar_clock_font_size";
@@ -119,7 +118,6 @@ public class StatusbarSettingsFragment extends Fragment {
         private ListPreference mStatusBarAmPm;
         private ListPreference mStatusBarBattery;
         private ListPreference mStatusBarBatteryShowPercent;
-        private ListPreference mQuickPulldown;
         private ListPreference mFontStyle;
         private ListPreference mStatusBarClockFontSize;
 
@@ -145,7 +143,6 @@ public class StatusbarSettingsFragment extends Fragment {
             mStatusBarDate = (ListPreference) findPreference(STATUS_BAR_DATE);
             mStatusBarDateStyle = (ListPreference) findPreference(STATUS_BAR_DATE_STYLE);
             mStatusBarDateFormat = (ListPreference) findPreference(STATUS_BAR_DATE_FORMAT);
-            mQuickPulldown = (ListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
             mFontStyle = (ListPreference) findPreference(STATUS_BAR_CLOCK_FONT_STYLE);
             mStatusBarClockFontSize = (ListPreference) findPreference(STATUS_BAR_CLOCK_FONT_SIZE);
             mBatteryBar = prefSet.findPreference(PREF_BATTERY_BAR);
@@ -186,12 +183,6 @@ public class StatusbarSettingsFragment extends Fragment {
             mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
             mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
             mStatusBarBatteryShowPercent = (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
-
-            int quickPulldown = CMSettings.System.getInt(resolver,
-                    CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
-            mQuickPulldown.setValue(String.valueOf(quickPulldown));
-            updatePulldownSummary(quickPulldown);
-            mQuickPulldown.setOnPreferenceChangeListener(this);
 
             int clockStyle = CMSettings.System.getInt(resolver,
                     CMSettings.System.STATUS_BAR_CLOCK, 1);
@@ -308,12 +299,6 @@ public class StatusbarSettingsFragment extends Fragment {
                 mStatusBarBatteryShowPercent.setSummary(
                         mStatusBarBatteryShowPercent.getEntries()[index]);
                 return true;
-            } else if (preference == mQuickPulldown) {
-                int quickPulldown = Integer.valueOf((String) newValue);
-                CMSettings.System.putInt(
-                        resolver, CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, quickPulldown);
-                updatePulldownSummary(quickPulldown);
-                return true;
             } else if (preference == mStatusBarDate) {
                 int statusBarDate = Integer.valueOf((String) newValue);
                 int index = mStatusBarDate.findIndexOfValue((String) newValue);
@@ -404,20 +389,6 @@ public class StatusbarSettingsFragment extends Fragment {
                 mStatusBarBatteryShowPercent.setEnabled(false);
             } else {
                 mStatusBarBatteryShowPercent.setEnabled(true);
-            }
-        }
-
-        private void updatePulldownSummary(int value) {
-            Resources res = getResources();
-
-            if (value == 0) {
-                // quick pulldown deactivated
-                mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_off));
-            } else {
-                String direction = res.getString(value == 2
-                        ? R.string.status_bar_quick_qs_pulldown_summary_left
-                        : R.string.status_bar_quick_qs_pulldown_summary_right);
-                mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
             }
         }
 

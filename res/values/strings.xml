@@ -246,6 +246,7 @@
 
     <!-- Recents setting -->
     <string name="recents_settings">Recents settings</string>
+    <string name="recent_category_title">General recents settings</string>
 
     <!-- OmniSwitch -->
     <string name="omniswitch_category_title">OmniSwitch</string>
@@ -436,6 +437,8 @@
 
     <!-- Notifications Drawer -->
     <string name="notifications_drawer_settings">Notif Drawer Settings</string>
+    <string name="brightness_title_cat">Brightness Settings</string>
+    <string name="tiles_title_cat">Tiles Settings</string>
 
     <!-- Brightness slider -->
     <string name="qs_brightness_slider_title">Brightness slider switch</string>
@@ -636,6 +639,10 @@
     <!-- StatusBar Cat starts -->
     <!-- StatusBar settings -->
     <string name="statusbar_settings">StatusBar settings</string>
+    <string name="clock_title_cat">Clock settings</string>
+    <string name="date_title_cat">Date settings</string>
+    <string name="battery_title_cat">Battery settings</string>
+    <string name="misc_title_cat">Miscellaneous settings</string>
 
     <!-- Status bar date -->
     <string name="status_bar_date_title">Date</string>

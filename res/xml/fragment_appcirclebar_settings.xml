@@ -34,6 +34,9 @@
         android:summary="@string/app_circle_bar_included_apps_summary"
         android:dependency="enable_app_circle_bar" />
 
+    <PreferenceCategory
+        android:title="@string/trigger_category" />
+
     <com.emotion.control.widgets.SeekBarPreferenceCham
         android:key="trigger_width"
         android:title="@string/trigger_width_title"
