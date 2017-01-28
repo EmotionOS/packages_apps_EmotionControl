@@ -112,6 +112,7 @@ public class ButtonSettingsFragment extends Fragment {
         private static final String KEY_VOLUME_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
         private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE = "camera_double_tap_power_gesture";
         private static final String DT2L_CAMERA_VIBRATE_CONFIG = "dt2l_camera_vibrate_config";
+        private static final String PREF_KEYGUARD_TORCH = "keyguard_toggle_torch";
 
         private static final String CATEGORY_POWER = "power_key";
         private static final String CATEGORY_HOME = "home_key";
@@ -178,6 +179,8 @@ public class ButtonSettingsFragment extends Fragment {
         private SwitchPreference mHomeAnswerCall;
         private SwitchPreference mCameraDoubleTapPowerGesture;
 
+        private SwitchPreference mKeyguardTorch;
+
         private SwitchPreference mEnableHwKeys;
 
         private SwitchPreference mDisableFullscreenKeyboard;
@@ -197,6 +200,7 @@ public class ButtonSettingsFragment extends Fragment {
 
             addPreferencesFromResource(R.xml.fragment_button_settings);
             ContentResolver mResolver = getActivity().getContentResolver();
+            PreferenceScreen prefSet = getPreferenceScreen();
             final Resources res = getResources();
             final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -246,6 +250,9 @@ public class ButtonSettingsFragment extends Fragment {
             // Double press power to launch camera.
             mCameraDoubleTapPowerGesture
                         = (SwitchPreference) findPreference(KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE);
+
+            // Keyguard Torch
+            mKeyguardTorch = (SwitchPreference) prefSet.findPreference(PREF_KEYGUARD_TORCH);
 
             // Home button answers calls.
             mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);

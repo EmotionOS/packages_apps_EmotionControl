@@ -62,12 +62,9 @@ public class LockScreenSettingsFragment extends Fragment {
         public SettingsPreferenceFragment() {
         }
 
-        private static final String PREF_KEYGUARD_TORCH = "keyguard_toggle_torch";
         private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
 
         private ContentResolver mResolver;
-
-        private SwitchPreference mKeyguardTorch;
 
         static final int DEFAULT = 0xffffffff;
 
@@ -90,9 +87,6 @@ public class LockScreenSettingsFragment extends Fragment {
             if (!mFingerprintManager.isHardwareDetected()){
                 prefSet.removePreference(mFingerprintVib);
             }
-
-            // Keyguard Torch
-            mKeyguardTorch = (SwitchPreference) prefSet.findPreference(PREF_KEYGUARD_TORCH);
 
             mMaxKeyguardNotifConfig = (SeekBarPreferenceCham) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
             int kgconf = Settings.System.getInt(mResolver,
