@@ -261,6 +261,11 @@
   <string name="wakelock_blocker_reload">Recargar</string>
   <string name="wakelock_blocker_warning_title">Proceder con precaución</string>
   <string name="wakelock_blocker_warning">Bloquear wakelocks tiene el potencial de causar inestabilidad, accidentes o pérdida de datos</string>
+  <!-- Settings drawer switch -->
+  <string name="settings_drawer_title_cat">Panel de ajustes</string>
+  <string name="show_settings_drawer_title">Mostrar panel de ajustes</string>
+  <string name="show_settings_drawer_enabled">Panel de ajustes habilitado</string>
+  <string name="show_settings_drawer_disabled">Panel de ajustes deshabilitado</string>
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Pantalla de bloqueo</string>
@@ -272,8 +277,8 @@
   <!-- title for lock screen weather preference -->
   <string name="lockscreen_weather_enabled_title">Mostrar el tiempo</string>
   <!-- Fingerprint authentication vibration -->
-  <string name="fprint_sucess_vib_title">Vibración de autenticación de la huella digital</string>
-  <string name="fprint_sucess_vib_summary">Vibrar en autenticación correcta de la huella digital</string>
+  <string name="fprint_sucess_vib_title">Vibración al autenticar con la huella</string>
+  <string name="fprint_sucess_vib_summary">Vibrar cuando la autenticación con la huella es correcta</string>
   <!-- Double tap to sleep on lockscreen -->
   <string name="double_tap_sleep_anywhere_title">DT2S en la pantalla de bloqueo</string>
   <string name="double_tap_sleep_anywhere_summary">Doble toque en la pantalla de bloqueo para bloquear el dispositivo</string>
@@ -421,7 +426,7 @@
   <string name="quick_settings_vibrate_summary">Vibrar al tocar los ajustes rápidos</string>
   <!-- Advanced data tile -->
   <string name="qs_advanced_data_title">Interruptor rápido de datos</string>
-  <string name="qs_advanced_data_summary">>Habilita tocar una sola vez para activar o desactivar los datos</string>
+  <string name="qs_advanced_data_summary">Habilita tocar una sola vez para activar o desactivar los datos</string>
   <string name="sysui_qqs_count_title">Ajustes rápidos pequeños</string>
   <!-- Quick settings tiles columns and rows config -->
   <string name="qs_rows_portrait_title">Filas (vertical)</string>
