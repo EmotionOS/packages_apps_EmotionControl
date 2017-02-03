@@ -261,6 +261,7 @@
   <string name="wakelock_blocker_reload">Recharger</string>
   <string name="wakelock_blocker_warning_title">Continuer avec précaution</string>
   <string name="wakelock_blocker_warning">Le blocage de wakelocks peut potentiellement causer de l\'instabilité, des incidents ou perte de données</string>
+  <!-- Settings drawer switch -->
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Écran de verrouillage</string>
@@ -295,7 +296,9 @@
   <string name="lockscreen_maxnotif_config">Nombre maximal de notifications en attente</string>
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Informations de charge sur l\'écran de déverrouillage</string>
+  <string name="lockscreen_battery_info_summary">Affichage du courant, de la tension et de la température de la batterie en temps réel sur l’écran de verrouillage pendant le chargement</string>
   <!-- Torch -->
+  <string name="keyguard_torch_title">Lampe torche</string>
   <string name="keyguard_torch_summary">Sur écran éteint, un appui prolongé sur la touche Marche/Arrêt allume la lampe de poche</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Arrière-plan flou</string>
