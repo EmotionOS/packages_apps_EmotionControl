@@ -70,6 +70,7 @@ public class LockScreenSettingsFragment extends Fragment {
 
         private FingerprintManager mFingerprintManager;
         private SwitchPreference mFingerprintVib;
+        private SwitchPreference mFpKeystore;
         private SeekBarPreferenceCham mMaxKeyguardNotifConfig;
 
         @Override
@@ -84,9 +85,15 @@ public class LockScreenSettingsFragment extends Fragment {
             // Fingerprint vibration
             mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
             mFingerprintVib = (SwitchPreference) prefSet.findPreference("fingerprint_success_vib");
+            mFpKeystore = (SwitchPreference) prefSet.findPreference("fp_unlock_keystore");
             if (!mFingerprintManager.isHardwareDetected()){
                 prefSet.removePreference(mFingerprintVib);
-            }
+                prefSet.removePreference(mFpKeystore);
+	} else {
+            mFpKeystore.setChecked((Settings.System.getInt(mResolver,
+                    Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
+            mFpKeystore.setOnPreferenceChangeListener(this);
+        }
 
             mMaxKeyguardNotifConfig = (SeekBarPreferenceCham) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
             int kgconf = Settings.System.getInt(mResolver,
@@ -103,7 +110,12 @@ public class LockScreenSettingsFragment extends Fragment {
                 Settings.System.putInt(getActivity().getContentResolver(),
                         Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, kgconf);
                 return true;
-            }
+        } else if (preference == mFpKeystore) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FP_UNLOCK_KEYSTORE, value ? 1 : 0);
+            return true;
+        }
             return false;
         }
 
