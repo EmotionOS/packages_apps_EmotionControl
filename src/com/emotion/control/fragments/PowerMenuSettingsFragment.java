@@ -39,6 +39,7 @@ import android.provider.Settings;
 import com.android.internal.util.cm.PowerMenuConstants;
 
 import com.emotion.control.R;
+import com.emotion.control.util.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -80,6 +81,7 @@ public class PowerMenuSettingsFragment extends Fragment {
         private SwitchPreference mLockdownPref;
         private SwitchPreference mBugReportPref;
         private SwitchPreference mSilentPref;
+        private SwitchPreference mPowermenuTorch;
         private SwitchPreference mVoiceAssistPref;
         private SwitchPreference mAssistPref;
 
@@ -130,6 +132,8 @@ public class PowerMenuSettingsFragment extends Fragment {
                     mBugReportPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
                 } else if (action.equals(GLOBAL_ACTION_KEY_SILENT)) {
                     mSilentPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SILENT);
+                } else if (action.equals(GLOBAL_ACTION_KEY_TORCH)) {
+                    mPowermenuTorch = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_TORCH);
                 } else if (action.equals(GLOBAL_ACTION_KEY_VOICEASSIST)) {
                     mSilentPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_VOICEASSIST);
                 } else if (action.equals(GLOBAL_ACTION_KEY_ASSIST)) {
@@ -195,6 +199,14 @@ public class PowerMenuSettingsFragment extends Fragment {
 
             if (mSilentPref != null) {
                 mSilentPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SILENT));
+            }
+
+            if (mPowermenuTorch != null) {
+                if (!Utils.deviceSupportsFlashLight(getActivity())) {
+                    getPreferenceScreen().removePreference(mPowermenuTorch);
+                } else {
+                    mPowermenuTorch.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_TORCH));
+                }
             }
 
             if (mVoiceAssistPref != null) {
@@ -265,6 +277,10 @@ public class PowerMenuSettingsFragment extends Fragment {
             } else if (preference == mSilentPref) {
                 value = mSilentPref.isChecked();
                 updateUserConfig(value, GLOBAL_ACTION_KEY_SILENT);
+
+            } else if (preference == mPowermenuTorch) {
+                value = mPowermenuTorch.isChecked();
+                updateUserConfig(value, GLOBAL_ACTION_KEY_TORCH);
 
             } else if (preference == mVoiceAssistPref) {
                 value = mVoiceAssistPref.isChecked();
