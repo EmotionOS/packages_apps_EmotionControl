@@ -261,6 +261,7 @@
   <string name="wakelock_blocker_reload">Aktualisieren</string>
   <string name="wakelock_blocker_warning_title">Fortfahren auf eigene Gefahr</string>
   <string name="wakelock_blocker_warning">Das Blockieren von Wakelocks führt möglicherweise zu Instabilitäten, Bugs oder Datenverlust</string>
+  <!-- Settings drawer switch -->
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Sperrbildschirm</string>
@@ -741,6 +742,7 @@
   <string name="custom_header_provider_title">Header-Anbieter</string>
   <string name="custom_header_browse_title">Installierte Header durchsuchen</string>
   <string name="custom_header_browse_summary">Langer Druck auf ein beliebiges Bild für statischen Modus verwenden</string>
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <string name="ui_settings">Einstellungen für die Benutzeroberfläche</string>
@@ -820,14 +822,11 @@
   <string name="disable_immersive_message_summary">Dadurch werden alle Vollbild Modus Nachrichten ausgeblendet</string>
   <!-- Transparency Porn -->
   <string name="transparency_porn_title">Transparenz</string>
-  <!-- QS shade transparency -->
-  <string name="qs_transparent_shade">Transparenz der Schatten in den Schnelleinstellungen</string>
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
   <string name="qs_transparent_header">Transparenz der Kopfzeile</string>
-  <!-- Volume dialog transparency -->
-  <string name="volume_dialog_transparency">Lautstärkeregler Transparenz</string>
-  <!-- Power menu and dialogs transparency -->
-  <string name="power_menu_transparency">Powermenü Transparenz</string>
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <string name="power_menu_dialog_dim">Verdunklung des Hintergrundes bei geöffnetem Power-Menüfenster</string>
   <!-- Notifications transparency -->
@@ -853,6 +852,7 @@
   <string name="volume_dialog_corner_radius_title">Lautstärke Dialog Eckenradius</string>
   <string name="volume_dialog_dash_width_title">Lautstärke Dialog Strichstärke</string>
   <string name="volume_dialog_dash_gap_title">Strichabstand</string>
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->

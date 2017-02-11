@@ -157,6 +157,7 @@
   <string name="wakelock_blocker_reload">Reîncărcare</string>
   <string name="wakelock_blocker_warning_title">Continuați cu precauție</string>
   <string name="wakelock_blocker_warning">Blocarea wakelock-urilor poate cauza instabilitate, blocări sau pierderi de date</string>
+  <!-- Settings drawer switch -->
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Ecran blocare</string>
@@ -282,6 +283,7 @@
   <!-- Statusbar clock font size -->
   <!-- Battery Bar -->
   <!-- Header images -->
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <!-- Toast Animation -->
@@ -295,14 +297,15 @@
   <!-- Force expanded notifications -->
   <!-- Disabling immersive mode messages -->
   <!-- Transparency Porn -->
-  <!-- QS shade transparency -->
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
-  <!-- Volume dialog transparency -->
-  <!-- Power menu and dialogs transparency -->
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <!-- Notifications transparency -->
   <!-- QS stroke settings -->
   <!-- Volume dialog stroke settings -->
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->

@@ -269,6 +269,11 @@
   <string name="wakelock_blocker_reload">اعادة تحميل</string>
   <string name="wakelock_blocker_warning_title">التقدم بحذر</string>
   <string name="wakelock_blocker_warning">حظر موانع التهنيق يمكن ان يسبب عدم الاستقرار ، تعطل او فقدان البيانات</string>
+  <!-- Settings drawer switch -->
+  <string name="settings_drawer_title_cat">درج الاعدادات</string>
+  <string name="show_settings_drawer_title">اظهار درج الاعدادات</string>
+  <string name="show_settings_drawer_enabled">درج الاعدادات ممكن</string>
+  <string name="show_settings_drawer_disabled">درج الاعدادات غير ممكن</string>
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">شاشة القفل</string>
@@ -303,7 +308,9 @@
   <string name="lockscreen_maxnotif_config">الحد الأقصى المسموح به من الاشهارات على شاشة القفل</string>
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">معلومات الشحن على شاشة القفل</string>
+  <string name="lockscreen_battery_info_summary">عرض الحد الأقصى للشحن و درجة حرارة البطارية على شاشة القفل اثناء الشحن </string>
   <!-- Torch -->
+  <string name="keyguard_torch_title">كشاف</string>
   <string name="keyguard_torch_summary">الضغط المطول على زر الطاقة عندما تكون الشاشة مقفلة يشغل الكشاف</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">تمويه الخلفية</string>
@@ -753,6 +760,7 @@
   <string name="custom_header_provider_title">موفر الرأسية</string>
   <string name="custom_header_browse_title">استعراض الرأسيات المثبتة</string>
   <string name="custom_header_browse_summary">الضغط المطول على اي صورة لاستخدامها في الوضع الثابت</string>
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <string name="ui_settings">اعدادات واجهة ui</string>
@@ -832,14 +840,11 @@
   <string name="disable_immersive_message_summary">هذا سيخفي كل رسائل الوضع المغمور</string>
   <!-- Transparency Porn -->
   <string name="transparency_porn_title">الشفافية</string>
-  <!-- QS shade transparency -->
-  <string name="qs_transparent_shade">تظليل الشفافية</string>
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
   <string name="qs_transparent_header">شفافية الرأسية</string>
-  <!-- Volume dialog transparency -->
-  <string name="volume_dialog_transparency">شفافية حوار الصوت</string>
-  <!-- Power menu and dialogs transparency -->
-  <string name="power_menu_transparency">شفافية قائمة الطاقة / اعادة التشغيل</string>
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <string name="power_menu_dialog_dim">كمية ال dim في خلفية حوار الطاقة / اعادة التشغيل</string>
   <!-- Notifications transparency -->
@@ -865,6 +870,7 @@
   <string name="volume_dialog_corner_radius_title">نصف قطر حوار الصوت</string>
   <string name="volume_dialog_dash_width_title">عرض حوار الصوت</string>
   <string name="volume_dialog_dash_gap_title">ثغرة حوار الصوت</string>
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->

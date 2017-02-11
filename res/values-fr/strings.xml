@@ -262,6 +262,10 @@
   <string name="wakelock_blocker_warning_title">Continuer avec précaution</string>
   <string name="wakelock_blocker_warning">Le blocage de wakelocks peut potentiellement causer de l\'instabilité, des incidents ou perte de données</string>
   <!-- Settings drawer switch -->
+  <string name="settings_drawer_title_cat">Paramètres du panneau</string>
+  <string name="show_settings_drawer_title">Afficher les paramètres du panneau</string>
+  <string name="show_settings_drawer_enabled">Paramètres du panneau activés</string>
+  <string name="show_settings_drawer_disabled">Paramètres du panneau désactivés</string>
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Écran de verrouillage</string>
@@ -742,6 +746,7 @@
   <string name="custom_header_provider_title">Préférence d\'en-tête</string>
   <string name="custom_header_browse_title">Parcourir les en-têtes installés</string>
   <string name="custom_header_browse_summary">Pression longue sur n’importe quelle image à utiliser pour le mode statique</string>
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <string name="ui_settings">Paramètres l’interface utilisateur</string>
@@ -821,14 +826,11 @@
   <string name="disable_immersive_message_summary">Ceci masquera tous les messages du mode immersif</string>
   <!-- Transparency Porn -->
   <string name="transparency_porn_title">Porno de transparence</string>
-  <!-- QS shade transparency -->
-  <string name="qs_transparent_shade">Transparence d\'ombre des réglages rapides</string>
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
   <string name="qs_transparent_header">Transparence d\'en-tête des réglages rapides</string>
-  <!-- Volume dialog transparency -->
-  <string name="volume_dialog_transparency">Transparence de la fenêtre volume</string>
-  <!-- Power menu and dialogs transparency -->
-  <string name="power_menu_transparency">Transparence du menu Marche/Arrêt</string>
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <string name="power_menu_dialog_dim">Transparence des dialogues du menu Marche/Arrêt</string>
   <!-- Notifications transparency -->
@@ -854,6 +856,7 @@
   <string name="volume_dialog_corner_radius_title">Rayon d\'angle du dialogue de volume</string>
   <string name="volume_dialog_dash_width_title">Largeur du curseur de volume</string>
   <string name="volume_dialog_dash_gap_title">Épaisseur du curseur de volume</string>
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->

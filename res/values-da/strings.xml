@@ -19,16 +19,68 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- EmotionControl -->
+  <string name="app_name">Emotion control</string>
+  <string name="emotion_control">Emotion control</string>
+  <string name="navigation_drawer_open">Åben navigations skuffen</string>
+  <string name="navigation_drawer_close">Luk navigations skuffen</string>
   <!-- Menu Items -->
+  <string name="menu_show_drawer_icon">Vis i app-oversigten</string>
   <!-- Header Strings -->
+  <string name="category_app_launcher">App Launcher</string>
+  <string name="category_general">Generelt</string>
+  <string name="category_lockscreen">Låseskærm</string>
+  <string name="category_hardware_keys">Knapper</string>
+  <string name="category_notifications_drawer">Meddelelsespanel</string>
+  <string name="category_power_menu">Power Menu</string>
+  <string name="category_sound">Lyd</string>
+  <string name="category_statusbar">Statusbar</string>
+  <string name="category_ui">Brugergrænseflade</string>
   <!-- Generic -->
+  <string name="save">Gem</string>
+  <string name="reset">Nulstil</string>
+  <string name="cancel">Annuller</string>
+  <string name="close">Luk</string>
+  <string name="center">Centreret</string>
+  <string name="top">Top</string>
+  <string name="bottom">Bund</string>
+  <string name="add">Tilføj</string>
+  <string name="help">Hjælp</string>
+  <string name="enabled">Aktiveret</string>
+  <string name="default_string">Standard</string>
+  <string name="choose_app">Vælg applikation</string>
+  <string name="reset_message">Nulstil alle poster til standard?</string>
+  <string name="dlg_reset_values_message">Nulstil værdierne til standard?</string>
+  <string name="dlg_reset_emotion">Emotion</string>
+  <string name="dlg_reset_android">Android</string>
+  <string name="colors_title">Farver</string>
+  <string name="text_title">Tekst</string>
   <!-- Title for the button to restart a print job. [CHAR LIMIT=25] -->
+  <string name="print_restart">Genstart</string>
   <!-- MultiChoiceSetting -->
+  <plurals name="multichoice_at_least">
+    <item quantity="one">Vælg venligst mindst <xliff:g id="number">%d </xliff:g> element.</item>
+    <item quantity="other">Vælg venligst mindst <xliff:g id="number">%d </xliff:g> elementer.</item>
+  </plurals>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Farvevælger</string>
+  <string name="press_color_to_apply">Tryk på farve for at anvende</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="set">Indstil</string>
+  <string name="default_color">Standard</string>
   <!-- Shortcut picker -->
+  <string name="use_custom_app_title">Brug brugerdefineret app</string>
+  <string name="use_custom_app_summary">Brug brugeredefineret app i stedet for seneste apps-dialogen</string>
+  <string name="select_custom_app_title">Vælg brugerdefineret app</string>
+  <string name="group_applications">Applikationer</string>
+  <string name="select_custom_app_title">Vælg brugerdefineret app</string>
   <!-- SystemUI restart prompt -->
+  <string name="systemui_restart_title">ADVARSEL</string>
+  <string name="systemui_restart_message">SystemUI genstartes så valgte indstillinger kan anvendes korrekt.</string>
   <!-- AppLauncher Cat starts -->
   <!-- Gesture Anywhere -->
+  <string name="gesture_anywhere_title">Gestus overalt</string>
   <!-- Label, button used to add a gesture -->
   <!-- Label, button used to reload all gestures -->
   <!-- Label, button used to cancel the operation of adding a gesture -->
@@ -47,15 +99,61 @@
   <!-- Title of dialog box -->
   <!-- Label of gesture name field in Rename gesture dialog box -->
   <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+  <string name="trigger_category">Aktiveringsområde</string>
+  <string name="trigger_width_title">Aktiveringsbredde</string>
+  <string name="trigger_width_summary">Justér bredden af aktiveringsområdet</string>
+  <string name="trigger_top_title">Aktiverings position</string>
+  <string name="trigger_top_summary">Juster den lodrette position i aktiveringsområdet</string>
+  <string name="trigger_bottom_title">Aktiveringshøjde</string>
+  <string name="trigger_bottom_summary">Juster højden på aktiveringsområdet</string>
+  <string name="select_custom_app_title">Vælg brugerdefineret app</string>
   <!-- Gesture Anywhere -->
+  <string name="select_custom_app_title">Vælg brugerdefineret app</string>
   <!-- Circle app bar -->
+  <string name="trigger_width_title">Aktiveringsbredde</string>
+  <string name="trigger_width_summary">Justér bredden af aktiveringsområdet</string>
+  <string name="trigger_top_title">Aktiverings position</string>
+  <string name="trigger_top_summary">Juster den lodrette position i aktiveringsområdet</string>
+  <string name="trigger_bottom_title">Aktiveringshøjde</string>
+  <string name="trigger_bottom_summary">Juster højden på aktiveringsområdet</string>
   <!-- App Sidebar -->
+  <string name="app_sidebar_position_summary">Placer Appbar på venstre eller højre side af skærmen</string>
+  <string name="app_sidebar_position_left">Venstre</string>
+  <string name="app_sidebar_position_right">Højre</string>
+  <string name="app_sidebar_hide_labels_title">Skjul ikontekster</string>
+  <string name="app_sidebar_hide_labels_summary">Skjule Appbar ikontekster</string>
+  <string name="tab_category">Synlig fane</string>
+  <string name="use_tab_title">Vis fane</string>
+  <string name="use_tab_summary">Vis en synlig fane på den side, som vil vise appbar ved berøring.</string>
+  <string name="tab_position_title">Fane placering</string>
+  <string name="tab_position_summary">Vise fanen på toppen, midten eller bunden på siden af skærmen.</string>
+  <string name="tab_size_title">Fane størrelse</string>
+  <string name="tab_size_summary">Ændre størrelsen på den synlige fane.</string>
+  <string name="trigger_category">Aktiveringsområde</string>
+  <string name="trigger_width_title">Aktiveringsbredde</string>
+  <string name="trigger_width_summary">Justér bredden af aktiveringsområdet</string>
+  <string name="trigger_top_title">Aktiverings position</string>
+  <string name="trigger_top_summary">Juster den lodrette position i aktiveringsområdet</string>
+  <string name="trigger_bottom_title">Aktiveringshøjde</string>
+  <string name="trigger_bottom_summary">Juster højden på aktiveringsområdet</string>
+  <string name="app_sidebar_hide_timeout_title">AppBar autoskjul</string>
+  <string name="app_sidebar_hide_timeout_summary">Timeout for autoskjul Appbar.</string>
   <!-- AppLauncher Cat ends -->
   <!-- General Cat starts -->
   <!-- General -->
+  <string name="general_settings">Generelle instillinger</string>
   <!-- Toast Icons -->
+  <string name="toast_icon_title_cat">Toast indstillinger</string>
+  <string name="toast_icon_title">Toast ikon</string>
+  <string name="toast_icon_summary">Vis appikonet bag toast notifikationen</string>
   <!-- LockClocK -->
+  <string name="lock_clock_title_cat">LockClock Widget</string>
+  <string name="lock_clock_title">cLock indstillinger</string>
+  <string name="lock_clock_summary">Få vist eller ændre, hvordan \'cLock\' widget vises.</string>
   <!-- Optional screenshot type -->
+  <string name="screenshot_type_title_cat">Screenshot indstillinger</string>
+  <string name="screenshot_type_title">Screenshot type</string>
+  <string name="screenshot_type_fullscreen">Tag fullscreen screenshots</string>
   <!-- Screenshot delay -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Hostname setting -->
@@ -64,6 +162,7 @@
   <!-- Recents panel settings -->
   <!-- Immersive Recents -->
   <!-- Wakelock blocker -->
+  <!-- Settings drawer switch -->
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <!-- Lockscreen Media art -->
@@ -136,6 +235,7 @@
   <!-- Statusbar clock font size -->
   <!-- Battery Bar -->
   <!-- Header images -->
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <!-- Toast Animation -->
@@ -149,14 +249,15 @@
   <!-- Force expanded notifications -->
   <!-- Disabling immersive mode messages -->
   <!-- Transparency Porn -->
-  <!-- QS shade transparency -->
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
-  <!-- Volume dialog transparency -->
-  <!-- Power menu and dialogs transparency -->
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <!-- Notifications transparency -->
   <!-- QS stroke settings -->
   <!-- Volume dialog stroke settings -->
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->

@@ -205,6 +205,7 @@
   <string name="wakelock_blocker_reload">Ανανέωση</string>
   <string name="wakelock_blocker_warning_title">Συνεχίστε με προσοχή</string>
   <string name="wakelock_blocker_warning">Η φραγή των wakelocks μπορεί να προκαλέσει αστάθεια, σταμάτημα λειτουργίας ή απώλεια δεδομένων</string>
+  <!-- Settings drawer switch -->
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Οθόνη κλειδώματος</string>
@@ -528,6 +529,7 @@
   <string name="battery_bar_thickness_title">Πάχος γραμμής μπαταρίας</string>
   <string name="battery_bar_animate_title">Εφέ φόρτισης</string>
   <!-- Header images -->
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <!-- Toast Animation -->
@@ -591,16 +593,16 @@
   <!-- Force expanded notifications -->
   <!-- Disabling immersive mode messages -->
   <!-- Transparency Porn -->
-  <!-- QS shade transparency -->
-  <string name="qs_transparent_shade">Διαφάνεια σκιάς γρήγορων ρυθμίσεων</string>
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
   <string name="qs_transparent_header">Διαφάνεια κεφαλίδας γρήγορων ρυθμίσεων</string>
-  <!-- Volume dialog transparency -->
-  <!-- Power menu and dialogs transparency -->
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <!-- Notifications transparency -->
   <!-- QS stroke settings -->
   <!-- Volume dialog stroke settings -->
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->

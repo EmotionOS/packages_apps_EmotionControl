@@ -263,6 +263,11 @@
   <string name="wakelock_blocker_reload">Obnovit</string>
   <string name="wakelock_blocker_warning_title">Postupujte s opatrností</string>
   <string name="wakelock_blocker_warning">Blokováním wakelocků můžete způsobit nestabilitu, pády nebo ztrátu dat</string>
+  <!-- Settings drawer switch -->
+  <string name="settings_drawer_title_cat">Nastavení seznamu</string>
+  <string name="show_settings_drawer_title">Zobrazit nastavení seznamu</string>
+  <string name="show_settings_drawer_enabled">Nastavení seznamu povoleno</string>
+  <string name="show_settings_drawer_disabled">Nastavení seznamu zakázáno</string>
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Zamykací obrazovka</string>
@@ -744,6 +749,7 @@
   <string name="custom_header_provider_title">Operátor v záhlaví</string>
   <string name="custom_header_browse_title">Procházet nainstalované záhlaví</string>
   <string name="custom_header_browse_summary">Přidržením jakéhokoliv obrázku spustit statický režim</string>
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <string name="ui_settings">Nastavení uživatelského rozhraní</string>
@@ -823,14 +829,11 @@
   <string name="disable_immersive_message_summary">Toto skryje všechny zprávy pohlcujícího režimu</string>
   <!-- Transparency Porn -->
   <string name="transparency_porn_title">Transparentnost</string>
-  <!-- QS shade transparency -->
-  <string name="qs_transparent_shade">Průhlednost stínů QS</string>
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
   <string name="qs_transparent_header">Průhlednost hlavičky QS</string>
-  <!-- Volume dialog transparency -->
-  <string name="volume_dialog_transparency">Průhlednost okna hlasitosti</string>
-  <!-- Power menu and dialogs transparency -->
-  <string name="power_menu_transparency">Průhlednost menu tlačítka \"Power\"</string>
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <string name="power_menu_dialog_dim">Úroveň průhlednosti nabídky tlačítka \"Power\"</string>
   <!-- Notifications transparency -->
@@ -856,6 +859,7 @@
   <string name="volume_dialog_corner_radius_title">Neprůhlednost panelu hlasitosti</string>
   <string name="volume_dialog_dash_width_title">Šířka pomlčky ohraničení panelu hlasitosti</string>
   <string name="volume_dialog_dash_gap_title">Šířka mezery ohraničení panelu hlasitosti</string>
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->

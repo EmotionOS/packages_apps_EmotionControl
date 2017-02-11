@@ -261,6 +261,7 @@
   <string name="wakelock_blocker_reload">Herladen</string>
   <string name="wakelock_blocker_warning_title">Wees voorzichtig als je verdergaat</string>
   <string name="wakelock_blocker_warning">Wakelocks blokkeren kan leiden tot instabiliteit, vastlopers en het verliezen van data</string>
+  <!-- Settings drawer switch -->
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Vergrendelscherm</string>
@@ -609,6 +610,7 @@ De gegevens worden iedere 7 dagen gestuurd.\n\n Voor een voorbeeld van gegevens 
   <!-- Statusbar clock font size -->
   <!-- Battery Bar -->
   <!-- Header images -->
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <!-- Toast Animation -->
@@ -642,11 +644,10 @@ De gegevens worden iedere 7 dagen gestuurd.\n\n Voor een voorbeeld van gegevens 
   <string name="force_expanded_notifications_summary">Enkel beschikbaar voor apps die uitgebreide meldingen ondersteunen</string>
   <!-- Disabling immersive mode messages -->
   <!-- Transparency Porn -->
-  <!-- QS shade transparency -->
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
-  <!-- Volume dialog transparency -->
-  <!-- Power menu and dialogs transparency -->
-  <string name="power_menu_transparency">Aan/uit- en herstartmenu transparantie</string>
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <!-- Notifications transparency -->
   <string name="notifications_transparency">Notificaties transparantie</string>
@@ -660,6 +661,7 @@ De gegevens worden iedere 7 dagen gestuurd.\n\n Voor een voorbeeld van gegevens 
   <string name="volume_dialog_stroke_accent">Accentkleur</string>
   <string name="volume_dialog_stroke_custom">Aangepaste kleur</string>
   <string name="volume_dialog_corner_radius_title">Volume dialoogvenster straal afgeronde hoeken</string>
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->

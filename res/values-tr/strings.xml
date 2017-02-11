@@ -261,6 +261,11 @@
   <string name="wakelock_blocker_reload">Tekrar Yükle</string>
   <string name="wakelock_blocker_warning_title">Dikkatli ilerleyin</string>
   <string name="wakelock_blocker_warning">Uyandırma kilitlerini engellemek istikrarsızlık, çökme veya veri kaybına neden olabilir</string>
+  <!-- Settings drawer switch -->
+  <string name="settings_drawer_title_cat">Ayarlar çekmecesi</string>
+  <string name="show_settings_drawer_title">Ayarlar çekmecesini göster</string>
+  <string name="show_settings_drawer_enabled">Ayarlar çekmecesi etkin</string>
+  <string name="show_settings_drawer_disabled">Ayarlar çekmecesi devre dışı</string>
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Kilit Ekranı</string>
@@ -295,7 +300,9 @@
   <string name="lockscreen_maxnotif_config">Maksimum kilit ekranı bildirimleri</string>
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Kilit ekranı şarj bilgisi</string>
+  <string name="lockscreen_battery_info_summary">Şarj olurken kilit ekranı üzerinde gerçek zamanlı şarj akım, gerilim ve pil sıcaklığı görüntüle</string>
   <!-- Torch -->
+  <string name="keyguard_torch_title">El Feneri</string>
   <string name="keyguard_torch_summary">El fenerini açmak için ekran kapalıyken güç düğmesine uzun basın</string>
   <!-- title for lock screen blur preference -->
   <string name="lockscreen_blur_enabled_title">Bulanık arkaplan</string>
@@ -739,6 +746,7 @@
   <string name="custom_header_provider_title">Başlık sağlayıcı</string>
   <string name="custom_header_browse_title">Yüklü başlıklara gözat</string>
   <string name="custom_header_browse_summary">Herhangi bir resmi sabit modda kullanmak için uzun bas</string>
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <string name="ui_settings">Kullanıcı arabirimi ayarları</string>
@@ -818,14 +826,11 @@
   <string name="disable_immersive_message_summary">Bu tüm Tam Ekran Modu Mesajlarını gizler</string>
   <!-- Transparency Porn -->
   <string name="transparency_porn_title">Şeffaflık</string>
-  <!-- QS shade transparency -->
-  <string name="qs_transparent_shade">Hızlı Ayarlar Paneli Saydamlığı</string>
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
   <string name="qs_transparent_header">Hızlı ayarlar başlığı şeffaflığı</string>
-  <!-- Volume dialog transparency -->
-  <string name="volume_dialog_transparency">Ses paneli şeffaflığı</string>
-  <!-- Power menu and dialogs transparency -->
-  <string name="power_menu_transparency">Güç/yeniden başlat menüsü şeffaflığı</string>
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <string name="power_menu_dialog_dim">Güç menüsü loş arka plan miktarı</string>
   <!-- Notifications transparency -->
@@ -851,6 +856,7 @@
   <string name="volume_dialog_corner_radius_title">Ses paneli köşe çevresi</string>
   <string name="volume_dialog_dash_width_title">Ses paneli kontur çizgi genişliği</string>
   <string name="volume_dialog_dash_gap_title">Ses paneli kenar boşluğu</string>
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->

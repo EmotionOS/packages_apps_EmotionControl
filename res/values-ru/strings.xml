@@ -258,6 +258,11 @@
   <string name="wakelock_blocker_reload">Обновить</string>
   <string name="wakelock_blocker_warning_title">Соблюдайте осторожность</string>
   <string name="wakelock_blocker_warning">Блокировка wakelocks может вызвать нестабильность, ошибки и потерю данных</string>
+  <!-- Settings drawer switch -->
+  <string name="settings_drawer_title_cat">Меню настроек</string>
+  <string name="show_settings_drawer_title">Показывать меню настроек</string>
+  <string name="show_settings_drawer_enabled">Меню настроек вкл</string>
+  <string name="show_settings_drawer_disabled">Меню настроек выкл</string>
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <string name="lockscreen_settings_title">Экран блокировки</string>
@@ -739,6 +744,7 @@
   <string name="custom_header_provider_title">Провайдер заголовка</string>
   <string name="custom_header_browse_title">Обзор установленных заголовков</string>
   <string name="custom_header_browse_summary">Длительно нажмите на любое изображение, для статического режима</string>
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <string name="ui_settings">Параметры Пользовательского интерфейса</string>
@@ -818,14 +824,11 @@
   <string name="disable_immersive_message_summary">Это позволит скрыть все сообщения расширенного режима</string>
   <!-- Transparency Porn -->
   <string name="transparency_porn_title">Прозрачность элементов</string>
-  <!-- QS shade transparency -->
-  <string name="qs_transparent_shade">Прозрачность тени панели быстрых настроек</string>
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
   <string name="qs_transparent_header">Прозрачность заголовка панели быстрых настроек</string>
-  <!-- Volume dialog transparency -->
-  <string name="volume_dialog_transparency">Прозрачность панели громкости</string>
-  <!-- Power menu and dialogs transparency -->
-  <string name="power_menu_transparency">Прозрачность меню питания/перезагрузки</string>
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <string name="power_menu_dialog_dim">Затемнение фона при отображении меню питания/перезагрузки</string>
   <!-- Notifications transparency -->
@@ -851,6 +854,7 @@
   <string name="volume_dialog_corner_radius_title">Закругление углов панели громкости</string>
   <string name="volume_dialog_dash_width_title">Ширина ползунка громкости</string>
   <string name="volume_dialog_dash_gap_title">Расстояние между -</string>
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->
