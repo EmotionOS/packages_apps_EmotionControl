@@ -21,12 +21,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">@*android:color/accent_material_light</color>
-    <color name="transparent">#00000000</color>
+    <color name="transparent">@android:color/transparent</color>
 
-    <color name="divider_color">#ddd</color>
-    <color name="underline_color">#ddd</color>
-    <color name="indicator_color">#ddd</color>
-    <color name="tab_text_color">#000000</color>
+    <color name="divider_color">@*android:color/accent_material_light</color>
+    <color name="underline_color">@*android:color/accent_material_light</color>
+    <color name="indicator_color">@*android:color/accent_material_light</color>
+    <color name="tab_text_color">@android:color/white</color>
 
     <color name="navigation_drawer_background">#ffffff</color>
     <color name="extension_list_item_color">#ffc9c9c9</color>
