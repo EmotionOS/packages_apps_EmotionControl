@@ -44,7 +44,7 @@
 
     </LinearLayout>
 
-    <com.emotion.control.fragments.ui.GestureAnywhereGestureOverlayView
+    <com.emotion.control.fragments.applauncher.GestureAnywhereGestureOverlayView
         android:id="@+id/gestures_overlay"
         android:layout_width="match_parent"
         android:layout_height="0dip"
