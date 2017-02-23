@@ -501,7 +501,7 @@
   <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
   <!-- Bluetooth status -->
   <string name="bluetooth_battery_title">Show Bluetooth battery status</string>
-  <string name="bluetooth_battery_summary">Show battery status for the currently connected bluetooth device, if availible.</string>
+  <string name="bluetooth_battery_summary">Show battery status for the currently connected bluetooth device, if available.</string>
   <!-- 4G LTE switch -->
   <string name="show_fourg_title">Show 4G instead of LTE</string>
   <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G</string>
