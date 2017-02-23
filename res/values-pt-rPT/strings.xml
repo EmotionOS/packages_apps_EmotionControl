@@ -54,7 +54,6 @@
   <string name="dlg_reset_values_message">Repor os valores padrão?</string>
   <string name="restarting_ui">Reiniciar UI\u2026</string>
   <string name="dlg_reset_emotion">Emoção</string>
-  <string name="dlg_reset_android">Android</string>
   <string name="colors_title">Cores</string>
   <string name="text_title">Texto</string>
   <!-- Title for the button to restart a print job. [CHAR LIMIT=25] -->
@@ -71,9 +70,6 @@
   <!-- Color Picker -->
   <string name="dialog_color_picker">Selecionador de cores</string>
   <string name="press_color_to_apply">Pressione na cor para aplicar</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
   <string name="set">Definir</string>
   <string name="default_color">Predefinido</string>
   <!-- Shortcut picker -->
@@ -120,7 +116,6 @@
   <string name="app_circle_bar_included_apps_title">Aplicações incluídas</string>
   <string name="app_circle_bar_included_apps_summary">Aplicações mostradas na aplicação barra circular</string>
   <!-- App Sidebar -->
-  <string name="app_sidebar_title">AppSidebar</string>
   <string name="app_sidebar_enable_title">Habilitar Appbar</string>
   <string name="app_sidebar_enable_summaryOn">AppBar é habilitado</string>
   <string name="app_sidebar_enable_summaryOff">AppBar é desativado</string>
@@ -156,6 +151,7 @@
   <!-- lock screen visualizer -->
   <!-- title for lock screen weather preference -->
   <!-- Fingerprint authentication vibration -->
+  <!-- Fingerprint unlock keystore -->
   <!-- Double tap to sleep on lockscreen -->
   <!-- Lockscreen Quick unlock -->
   <!-- Disable OS on lockscreen -->
