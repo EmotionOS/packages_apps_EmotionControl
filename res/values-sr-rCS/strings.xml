@@ -64,12 +64,14 @@
   <!-- Recents panel settings -->
   <!-- Immersive Recents -->
   <!-- Wakelock blocker -->
+  <!-- Settings drawer switch -->
   <!-- General Cat ends -->
   <!-- Lockscreen Cat starts -->
   <!-- Lockscreen Media art -->
   <!-- lock screen visualizer -->
   <!-- title for lock screen weather preference -->
   <!-- Fingerprint authentication vibration -->
+  <!-- Fingerprint unlock keystore -->
   <!-- Double tap to sleep on lockscreen -->
   <!-- Lockscreen Quick unlock -->
   <!-- Disable OS on lockscreen -->
@@ -136,6 +138,7 @@
   <!-- Statusbar clock font size -->
   <!-- Battery Bar -->
   <!-- Header images -->
+  <!-- Breathing Notifications -->
   <!-- StatusBar Cat ends -->
   <!-- UI Interface Cat starts -->
   <!-- Toast Animation -->
@@ -149,14 +152,15 @@
   <!-- Force expanded notifications -->
   <!-- Disabling immersive mode messages -->
   <!-- Transparency Porn -->
-  <!-- QS shade transparency -->
+  <!-- QS shade opacity -->
   <!-- QS header transparency -->
-  <!-- Volume dialog transparency -->
-  <!-- Power menu and dialogs transparency -->
+  <!-- Volume dialog opacity -->
+  <!-- Power menu and dialogs opacity -->
   <!-- Power/reboot dialogs dim amount -->
   <!-- Notifications transparency -->
   <!-- QS stroke settings -->
   <!-- Volume dialog stroke settings -->
+  <!-- Blur UI -->
   <!-- UI Interface Cat ends -->
   <!-- PA Pie Cat starts -->
   <!-- PA Pie control -->
