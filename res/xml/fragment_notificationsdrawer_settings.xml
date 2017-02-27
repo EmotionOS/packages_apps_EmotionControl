@@ -25,6 +25,11 @@
         android:key="brightness_cat"
         android:title="@string/brightness_title_cat" >
 
+    <com.emotion.control.settings.SystemSettingSwitchPreference
+        android:key="notification_guts_kill_app_button"
+        android:title="@string/notification_guts_kill_app_button_title"
+        android:summary="@string/notification_guts_kill_app_button_summary" />
+
     <com.emotion.control.settings.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_brightness_slider_title"
