@@ -25,9 +25,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.database.ContentObserver;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -44,14 +42,13 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 
 import com.emotion.control.R;
-import cyanogenmod.providers.CMSettings;
 import com.emotion.control.widgets.SeekBarPreferenceCham;
+import cyanogenmod.providers.CMSettings;
 
 public class NotificationsDrawerFragment extends Fragment {
 
@@ -84,6 +81,7 @@ public class NotificationsDrawerFragment extends Fragment {
         private static final String PREF_COLUMNS = "qs_columns";
         private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
         private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+
         private static final String CUSTOM_HEADER_IMAGE = "status_bar_custom_header";
         private static final String DAYLIGHT_HEADER_PACK = "daylight_header_pack";
         private static final String DEFAULT_HEADER_PACKAGE = "com.android.systemui";
@@ -101,7 +99,6 @@ public class NotificationsDrawerFragment extends Fragment {
         private ListPreference mQsColumns;
         private ListPreference mSmartPulldown;
         private ListPreference mQuickPulldown;
-
         private SeekBarPreferenceCham mHeaderShadow;
         private ListPreference mHeaderProvider;
         private String mDaylightHeaderProvider;
@@ -234,13 +231,11 @@ public class NotificationsDrawerFragment extends Fragment {
             mHeaderProvider.setSummary(mHeaderProvider.getEntry());
             mHeaderProvider.setOnPreferenceChangeListener(this);
             mDaylightHeaderPack.setEnabled(providerName.equals(mDaylightHeaderProvider));
-
             mHeaderBrowse = (PreferenceScreen) findPreference(CUSTOM_HEADER_BROWSE);
             mHeaderBrowse.setEnabled(isBrowseHeaderAvailable());
 
             setHasOptionsMenu(true);
             return prefSet;
-
         }
 
         @Override
@@ -280,7 +275,7 @@ public class NotificationsDrawerFragment extends Fragment {
                         Settings.Secure.QQS_COUNT, SysuiQqsCountValue);
                 int SysuiQqsCountIndex = mSysuiQqsCount.findIndexOfValue(SysuiQqsCount);
                 mSysuiQqsCount.setSummary(mSysuiQqsCount.getEntries()[SysuiQqsCountIndex]);
-            return true;
+                return true;
             } else if (preference == mRowsPortrait) {
                 intValue = Integer.valueOf((String) newValue);
                 index = mRowsPortrait.findIndexOfValue((String) newValue);
@@ -310,9 +305,16 @@ public class NotificationsDrawerFragment extends Fragment {
                 return true;
             } else if (preference == mQuickPulldown) {
                 int quickPulldown = Integer.valueOf((String) newValue);
-                CMSettings.System.putInt(
-                        mResolver, CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, quickPulldown);
+                CMSettings.System.putInt(mResolver,
+                        CMSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, quickPulldown);
                 updatePulldownSummary(quickPulldown);
+                return true;
+            } else if (preference == mDaylightHeaderPack) {
+                String value = (String) newValue;
+                Settings.System.putString(mResolver,
+                        Settings.System.STATUS_BAR_DAYLIGHT_HEADER_PACK, value);
+                int valueIndex = mDaylightHeaderPack.findIndexOfValue(value);
+                mDaylightHeaderPack.setSummary(mDaylightHeaderPack.getEntries()[valueIndex]);
                 return true;
             } else if (preference == mHeaderShadow) {
                 Integer headerShadow = (Integer) newValue;
@@ -327,6 +329,7 @@ public class NotificationsDrawerFragment extends Fragment {
                 int valueIndex = mHeaderProvider.findIndexOfValue(value);
                 mHeaderProvider.setSummary(mHeaderProvider.getEntries()[valueIndex]);
                 mDaylightHeaderPack.setEnabled(value.equals(mDaylightHeaderProvider));
+                return true;
             }
             return false;
         }
